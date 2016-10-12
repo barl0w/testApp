@@ -1,0 +1,26 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Trump vs Hillary' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Trump vs Hillary
+  pod 'pop', '~> 1.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'FBSDKLoginKit'
+  pod 'SwiftKeychainWrapper'
+  target 'Trump vs HillaryTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Trump vs HillaryUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

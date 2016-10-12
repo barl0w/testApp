@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423497701DAEF75200A2236E /* CandidatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4234976F1DAEF75200A2236E /* CandidatesVC.swift */; };
 		42519C231DAEDC220038A655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42519C221DAEDC220038A655 /* AppDelegate.swift */; };
 		42519C251DAEDC220038A655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42519C241DAEDC220038A655 /* ViewController.swift */; };
 		42519C281DAEDC220038A655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42519C261DAEDC220038A655 /* Main.storyboard */; };
@@ -14,6 +15,17 @@
 		42519C2D1DAEDC220038A655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42519C2B1DAEDC220038A655 /* LaunchScreen.storyboard */; };
 		42519C381DAEDC220038A655 /* Trump_vs_HillaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42519C371DAEDC220038A655 /* Trump_vs_HillaryTests.swift */; };
 		42519C431DAEDC220038A655 /* Trump_vs_HillaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42519C421DAEDC220038A655 /* Trump_vs_HillaryUITests.swift */; };
+		42519C511DAEDD590038A655 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42519C501DAEDD590038A655 /* GoogleService-Info.plist */; };
+		427232411DAEE08A00EA3C89 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427232401DAEE08A00EA3C89 /* MaterialButton.swift */; };
+		427232441DAEE10F00EA3C89 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427232431DAEE10F00EA3C89 /* MaterialView.swift */; };
+		427232461DAEE4D300EA3C89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427232451DAEE4D300EA3C89 /* Constants.swift */; };
+		427232531DAEE57900EA3C89 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4272324F1DAEE57900EA3C89 /* ProgressHUD.bundle */; };
+		427232541DAEE57900EA3C89 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 427232511DAEE57900EA3C89 /* ProgressHUD.m */; };
+		42FAE34D1DAEE68A00645BCF /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE34C1DAEE68A00645BCF /* DataService.swift */; };
+		42FAE34F1DAEEDA400645BCF /* roundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE34E1DAEEDA400645BCF /* roundImage.swift */; };
+		646459809F68801EEE9F326D /* Pods_Trump_vs_Hillary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1782AB16F57349415E3E23 /* Pods_Trump_vs_Hillary.framework */; };
+		6A71D30E1BDAC6D3CCE516B4 /* Pods_Trump_vs_HillaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9107C216A6CBE5503AA69BCD /* Pods_Trump_vs_HillaryTests.framework */; };
+		F526A02159B2222E8DBDDDEE /* Pods_Trump_vs_HillaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC6EE813F7DDB835D9A7D3B /* Pods_Trump_vs_HillaryUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4234976F1DAEF75200A2236E /* CandidatesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatesVC.swift; sourceTree = "<group>"; };
 		42519C1F1DAEDC220038A655 /* Trump vs Hillary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trump vs Hillary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42519C221DAEDC220038A655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42519C241DAEDC220038A655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,26 @@
 		42519C3E1DAEDC220038A655 /* Trump vs HillaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trump vs HillaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42519C421DAEDC220038A655 /* Trump_vs_HillaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trump_vs_HillaryUITests.swift; sourceTree = "<group>"; };
 		42519C441DAEDC220038A655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42519C501DAEDD590038A655 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		427232371DAEDECC00EA3C89 /* Trump vs Hillary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Trump vs Hillary.entitlements"; sourceTree = "<group>"; };
+		427232401DAEE08A00EA3C89 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		427232431DAEE10F00EA3C89 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		427232451DAEE4D300EA3C89 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4272324F1DAEE57900EA3C89 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		427232501DAEE57900EA3C89 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		427232511DAEE57900EA3C89 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		427232521DAEE57900EA3C89 /* Trump-vs-Hillary-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Trump-vs-Hillary-Bridging-Header.h"; sourceTree = "<group>"; };
+		42FAE34C1DAEE68A00645BCF /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		42FAE34E1DAEEDA400645BCF /* roundImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundImage.swift; sourceTree = "<group>"; };
+		6DC6EE813F7DDB835D9A7D3B /* Pods_Trump_vs_HillaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trump_vs_HillaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87BC6DFD8F1E6A81FD9D4562 /* Pods-Trump vs HillaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs HillaryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs HillaryTests/Pods-Trump vs HillaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CF7B95EC94792E25A9ADF49 /* Pods-Trump vs HillaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs HillaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs HillaryTests/Pods-Trump vs HillaryTests.release.xcconfig"; sourceTree = "<group>"; };
+		9107C216A6CBE5503AA69BCD /* Pods_Trump_vs_HillaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trump_vs_HillaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E10731759DFC5B7FE05642B /* Pods-Trump vs HillaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs HillaryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs HillaryUITests/Pods-Trump vs HillaryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AB1782AB16F57349415E3E23 /* Pods_Trump_vs_Hillary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trump_vs_Hillary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31A7C59504FBBCC69F89ECD /* Pods-Trump vs HillaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs HillaryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs HillaryUITests/Pods-Trump vs HillaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA755DFE1E47D7B65C57644 /* Pods-Trump vs Hillary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs Hillary.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs Hillary/Pods-Trump vs Hillary.release.xcconfig"; sourceTree = "<group>"; };
+		EC4D454D4E40C54059B11F24 /* Pods-Trump vs Hillary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs Hillary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs Hillary/Pods-Trump vs Hillary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646459809F68801EEE9F326D /* Pods_Trump_vs_Hillary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A71D30E1BDAC6D3CCE516B4 /* Pods_Trump_vs_HillaryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F526A02159B2222E8DBDDDEE /* Pods_Trump_vs_HillaryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +117,8 @@
 				42519C361DAEDC220038A655 /* Trump vs HillaryTests */,
 				42519C411DAEDC220038A655 /* Trump vs HillaryUITests */,
 				42519C201DAEDC220038A655 /* Products */,
+				F893B1DFA2DC87BCD93ABB62 /* Pods */,
+				468317A396FE5D05ADCF8180 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +135,21 @@
 		42519C211DAEDC220038A655 /* Trump vs Hillary */ = {
 			isa = PBXGroup;
 			children = (
+				42FAE34C1DAEE68A00645BCF /* DataService.swift */,
+				427232421DAEE0F900EA3C89 /* MaterialDesign */,
+				427232371DAEDECC00EA3C89 /* Trump vs Hillary.entitlements */,
 				42519C221DAEDC220038A655 /* AppDelegate.swift */,
 				42519C241DAEDC220038A655 /* ViewController.swift */,
+				4234976F1DAEF75200A2236E /* CandidatesVC.swift */,
 				42519C261DAEDC220038A655 /* Main.storyboard */,
 				42519C291DAEDC220038A655 /* Assets.xcassets */,
 				42519C2B1DAEDC220038A655 /* LaunchScreen.storyboard */,
 				42519C2E1DAEDC220038A655 /* Info.plist */,
+				42519C501DAEDD590038A655 /* GoogleService-Info.plist */,
+				4272324F1DAEE57900EA3C89 /* ProgressHUD.bundle */,
+				427232501DAEE57900EA3C89 /* ProgressHUD.h */,
+				427232511DAEE57900EA3C89 /* ProgressHUD.m */,
+				427232521DAEE57900EA3C89 /* Trump-vs-Hillary-Bridging-Header.h */,
 			);
 			path = "Trump vs Hillary";
 			sourceTree = "<group>";
@@ -125,6 +172,40 @@
 			path = "Trump vs HillaryUITests";
 			sourceTree = "<group>";
 		};
+		427232421DAEE0F900EA3C89 /* MaterialDesign */ = {
+			isa = PBXGroup;
+			children = (
+				427232451DAEE4D300EA3C89 /* Constants.swift */,
+				427232401DAEE08A00EA3C89 /* MaterialButton.swift */,
+				427232431DAEE10F00EA3C89 /* MaterialView.swift */,
+				42FAE34E1DAEEDA400645BCF /* roundImage.swift */,
+			);
+			name = MaterialDesign;
+			sourceTree = "<group>";
+		};
+		468317A396FE5D05ADCF8180 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB1782AB16F57349415E3E23 /* Pods_Trump_vs_Hillary.framework */,
+				9107C216A6CBE5503AA69BCD /* Pods_Trump_vs_HillaryTests.framework */,
+				6DC6EE813F7DDB835D9A7D3B /* Pods_Trump_vs_HillaryUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F893B1DFA2DC87BCD93ABB62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D454D4E40C54059B11F24 /* Pods-Trump vs Hillary.debug.xcconfig */,
+				EAA755DFE1E47D7B65C57644 /* Pods-Trump vs Hillary.release.xcconfig */,
+				87BC6DFD8F1E6A81FD9D4562 /* Pods-Trump vs HillaryTests.debug.xcconfig */,
+				8CF7B95EC94792E25A9ADF49 /* Pods-Trump vs HillaryTests.release.xcconfig */,
+				C31A7C59504FBBCC69F89ECD /* Pods-Trump vs HillaryUITests.debug.xcconfig */,
+				9E10731759DFC5B7FE05642B /* Pods-Trump vs HillaryUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42519C471DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs Hillary" */;
 			buildPhases = (
+				E783B8177FDC3C6AFD86AB48 /* [CP] Check Pods Manifest.lock */,
 				42519C1B1DAEDC220038A655 /* Sources */,
 				42519C1C1DAEDC220038A655 /* Frameworks */,
 				42519C1D1DAEDC220038A655 /* Resources */,
+				0FFA08D69F83D9A8CD38518E /* [CP] Embed Pods Frameworks */,
+				99B1E2F73688D319C6178566 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42519C4A1DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs HillaryTests" */;
 			buildPhases = (
+				726A15709D7051BED4993767 /* [CP] Check Pods Manifest.lock */,
 				42519C2F1DAEDC220038A655 /* Sources */,
 				42519C301DAEDC220038A655 /* Frameworks */,
 				42519C311DAEDC220038A655 /* Resources */,
+				1D6A13812D7952786DC518C6 /* [CP] Embed Pods Frameworks */,
+				F194FFE7A7DFF9D27568FA0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42519C4D1DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs HillaryUITests" */;
 			buildPhases = (
+				1596E9122CDEA70FBC2F9DBC /* [CP] Check Pods Manifest.lock */,
 				42519C3A1DAEDC220038A655 /* Sources */,
 				42519C3B1DAEDC220038A655 /* Frameworks */,
 				42519C3C1DAEDC220038A655 /* Resources */,
+				6B774DFCB8390F282655C12F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,17 +283,25 @@
 					42519C1E1DAEDC220038A655 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 565DE2Z895;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					42519C321DAEDC220038A655 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 565DE2Z895;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 42519C1E1DAEDC220038A655;
 					};
 					42519C3D1DAEDC220038A655 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 565DE2Z895;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 42519C1E1DAEDC220038A655;
 					};
@@ -238,6 +335,8 @@
 				42519C2D1DAEDC220038A655 /* LaunchScreen.storyboard in Resources */,
 				42519C2A1DAEDC220038A655 /* Assets.xcassets in Resources */,
 				42519C281DAEDC220038A655 /* Main.storyboard in Resources */,
+				427232531DAEE57900EA3C89 /* ProgressHUD.bundle in Resources */,
+				42519C511DAEDD590038A655 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +356,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FFA08D69F83D9A8CD38518E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trump vs Hillary/Pods-Trump vs Hillary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1596E9122CDEA70FBC2F9DBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1D6A13812D7952786DC518C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trump vs HillaryTests/Pods-Trump vs HillaryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B774DFCB8390F282655C12F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trump vs HillaryUITests/Pods-Trump vs HillaryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		726A15709D7051BED4993767 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99B1E2F73688D319C6178566 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trump vs Hillary/Pods-Trump vs Hillary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E783B8177FDC3C6AFD86AB48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F194FFE7A7DFF9D27568FA0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trump vs HillaryTests/Pods-Trump vs HillaryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		42519C1B1DAEDC220038A655 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423497701DAEF75200A2236E /* CandidatesVC.swift in Sources */,
+				427232541DAEE57900EA3C89 /* ProgressHUD.m in Sources */,
+				42FAE34D1DAEE68A00645BCF /* DataService.swift in Sources */,
+				427232461DAEE4D300EA3C89 /* Constants.swift in Sources */,
 				42519C251DAEDC220038A655 /* ViewController.swift in Sources */,
 				42519C231DAEDC220038A655 /* AppDelegate.swift in Sources */,
+				427232411DAEE08A00EA3C89 /* MaterialButton.swift in Sources */,
+				42FAE34F1DAEEDA400645BCF /* roundImage.swift in Sources */,
+				427232441DAEE10F00EA3C89 /* MaterialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +565,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -386,6 +616,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -413,9 +644,16 @@
 		};
 		42519C481DAEDC220038A655 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4D454D4E40C54059B11F24 /* Pods-Trump vs Hillary.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Trump vs Hillary/Trump vs Hillary.entitlements";
 				DEVELOPMENT_TEAM = 565DE2Z895;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Trump vs Hillary/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teamapps.Trump-vs-Hillary";
@@ -426,9 +664,16 @@
 		};
 		42519C491DAEDC220038A655 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAA755DFE1E47D7B65C57644 /* Pods-Trump vs Hillary.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Trump vs Hillary/Trump vs Hillary.entitlements";
 				DEVELOPMENT_TEAM = 565DE2Z895;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Trump vs Hillary/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teamapps.Trump-vs-Hillary";
@@ -439,6 +684,7 @@
 		};
 		42519C4B1DAEDC220038A655 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87BC6DFD8F1E6A81FD9D4562 /* Pods-Trump vs HillaryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +700,7 @@
 		};
 		42519C4C1DAEDC220038A655 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF7B95EC94792E25A9ADF49 /* Pods-Trump vs HillaryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +716,7 @@
 		};
 		42519C4E1DAEDC220038A655 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31A7C59504FBBCC69F89ECD /* Pods-Trump vs HillaryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 565DE2Z895;
@@ -483,6 +731,7 @@
 		};
 		42519C4F1DAEDC220038A655 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E10731759DFC5B7FE05642B /* Pods-Trump vs HillaryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 565DE2Z895;
@@ -514,6 +763,7 @@
 				42519C491DAEDC220038A655 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42519C4A1DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs HillaryTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +772,7 @@
 				42519C4C1DAEDC220038A655 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42519C4D1DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs HillaryUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +781,7 @@
 				42519C4F1DAEDC220038A655 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,19 +7,54 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
+import Firebase
+import SwiftKeychainWrapper
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    @IBAction func facebookLoginTapped(_ sender: AnyObject) {
+        let facebookLogin = FBSDKLoginManager()
+        facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (user, error) in
+           // ProgressHUD.show("logging in...")
+            if error != nil {
+                //ProgressHUD.show("logging in...")
+               // ProgressHUD.showError("Oops, \(error?.localizedDescription)")
+            } else if user?.isCancelled == true {
+               // ProgressHUD.show("logging in...")
+               // ProgressHUD.showError("Facebook Login Cancelled")
+            } else {
+                //ProgressHUD.dismiss()
+                let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                self.firebaseAuth(credential)
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func firebaseAuth(_ credential: FIRAuthCredential) {
+        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+            if error != nil {
+                //ProgressHUD.showError("Oops, \(error?.localizedDescription)")
+            } else {
+                print("connected to server...")
+                if let user = user {
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
+                }
+            }
+        })
     }
-
-
+    
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+        let keychainResult = KeychainWrapper.setString(id, forKey: KEY_UID)
+        print("KOU: Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "VOTE", sender: nil)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .default
+    }
 }
 
