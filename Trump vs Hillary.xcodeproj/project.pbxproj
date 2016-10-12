@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42519C231DAEDC220038A655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42519C221DAEDC220038A655 /* AppDelegate.swift */; };
+		42519C251DAEDC220038A655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42519C241DAEDC220038A655 /* ViewController.swift */; };
+		42519C281DAEDC220038A655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42519C261DAEDC220038A655 /* Main.storyboard */; };
+		42519C2A1DAEDC220038A655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42519C291DAEDC220038A655 /* Assets.xcassets */; };
+		42519C2D1DAEDC220038A655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42519C2B1DAEDC220038A655 /* LaunchScreen.storyboard */; };
+		42519C381DAEDC220038A655 /* Trump_vs_HillaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42519C371DAEDC220038A655 /* Trump_vs_HillaryTests.swift */; };
+		42519C431DAEDC220038A655 /* Trump_vs_HillaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42519C421DAEDC220038A655 /* Trump_vs_HillaryUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42519C341DAEDC220038A655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42519C171DAEDC220038A655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42519C1E1DAEDC220038A655;
+			remoteInfo = "Trump vs Hillary";
+		};
+		42519C3F1DAEDC220038A655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42519C171DAEDC220038A655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42519C1E1DAEDC220038A655;
+			remoteInfo = "Trump vs Hillary";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42519C1F1DAEDC220038A655 /* Trump vs Hillary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trump vs Hillary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42519C221DAEDC220038A655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42519C241DAEDC220038A655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42519C271DAEDC220038A655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42519C291DAEDC220038A655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42519C2C1DAEDC220038A655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42519C2E1DAEDC220038A655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42519C331DAEDC220038A655 /* Trump vs HillaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trump vs HillaryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42519C371DAEDC220038A655 /* Trump_vs_HillaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trump_vs_HillaryTests.swift; sourceTree = "<group>"; };
+		42519C391DAEDC220038A655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42519C3E1DAEDC220038A655 /* Trump vs HillaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trump vs HillaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42519C421DAEDC220038A655 /* Trump_vs_HillaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trump_vs_HillaryUITests.swift; sourceTree = "<group>"; };
+		42519C441DAEDC220038A655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42519C1C1DAEDC220038A655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42519C301DAEDC220038A655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42519C3B1DAEDC220038A655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42519C161DAEDC220038A655 = {
+			isa = PBXGroup;
+			children = (
+				42519C211DAEDC220038A655 /* Trump vs Hillary */,
+				42519C361DAEDC220038A655 /* Trump vs HillaryTests */,
+				42519C411DAEDC220038A655 /* Trump vs HillaryUITests */,
+				42519C201DAEDC220038A655 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42519C201DAEDC220038A655 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42519C1F1DAEDC220038A655 /* Trump vs Hillary.app */,
+				42519C331DAEDC220038A655 /* Trump vs HillaryTests.xctest */,
+				42519C3E1DAEDC220038A655 /* Trump vs HillaryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42519C211DAEDC220038A655 /* Trump vs Hillary */ = {
+			isa = PBXGroup;
+			children = (
+				42519C221DAEDC220038A655 /* AppDelegate.swift */,
+				42519C241DAEDC220038A655 /* ViewController.swift */,
+				42519C261DAEDC220038A655 /* Main.storyboard */,
+				42519C291DAEDC220038A655 /* Assets.xcassets */,
+				42519C2B1DAEDC220038A655 /* LaunchScreen.storyboard */,
+				42519C2E1DAEDC220038A655 /* Info.plist */,
+			);
+			path = "Trump vs Hillary";
+			sourceTree = "<group>";
+		};
+		42519C361DAEDC220038A655 /* Trump vs HillaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				42519C371DAEDC220038A655 /* Trump_vs_HillaryTests.swift */,
+				42519C391DAEDC220038A655 /* Info.plist */,
+			);
+			path = "Trump vs HillaryTests";
+			sourceTree = "<group>";
+		};
+		42519C411DAEDC220038A655 /* Trump vs HillaryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				42519C421DAEDC220038A655 /* Trump_vs_HillaryUITests.swift */,
+				42519C441DAEDC220038A655 /* Info.plist */,
+			);
+			path = "Trump vs HillaryUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42519C1E1DAEDC220038A655 /* Trump vs Hillary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42519C471DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs Hillary" */;
+			buildPhases = (
+				42519C1B1DAEDC220038A655 /* Sources */,
+				42519C1C1DAEDC220038A655 /* Frameworks */,
+				42519C1D1DAEDC220038A655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trump vs Hillary";
+			productName = "Trump vs Hillary";
+			productReference = 42519C1F1DAEDC220038A655 /* Trump vs Hillary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42519C321DAEDC220038A655 /* Trump vs HillaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42519C4A1DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs HillaryTests" */;
+			buildPhases = (
+				42519C2F1DAEDC220038A655 /* Sources */,
+				42519C301DAEDC220038A655 /* Frameworks */,
+				42519C311DAEDC220038A655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42519C351DAEDC220038A655 /* PBXTargetDependency */,
+			);
+			name = "Trump vs HillaryTests";
+			productName = "Trump vs HillaryTests";
+			productReference = 42519C331DAEDC220038A655 /* Trump vs HillaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		42519C3D1DAEDC220038A655 /* Trump vs HillaryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42519C4D1DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs HillaryUITests" */;
+			buildPhases = (
+				42519C3A1DAEDC220038A655 /* Sources */,
+				42519C3B1DAEDC220038A655 /* Frameworks */,
+				42519C3C1DAEDC220038A655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42519C401DAEDC220038A655 /* PBXTargetDependency */,
+			);
+			name = "Trump vs HillaryUITests";
+			productName = "Trump vs HillaryUITests";
+			productReference = 42519C3E1DAEDC220038A655 /* Trump vs HillaryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42519C171DAEDC220038A655 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Team Apps";
+				TargetAttributes = {
+					42519C1E1DAEDC220038A655 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 565DE2Z895;
+						ProvisioningStyle = Automatic;
+					};
+					42519C321DAEDC220038A655 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 565DE2Z895;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 42519C1E1DAEDC220038A655;
+					};
+					42519C3D1DAEDC220038A655 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 565DE2Z895;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 42519C1E1DAEDC220038A655;
+					};
+				};
+			};
+			buildConfigurationList = 42519C1A1DAEDC220038A655 /* Build configuration list for PBXProject "Trump vs Hillary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42519C161DAEDC220038A655;
+			productRefGroup = 42519C201DAEDC220038A655 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42519C1E1DAEDC220038A655 /* Trump vs Hillary */,
+				42519C321DAEDC220038A655 /* Trump vs HillaryTests */,
+				42519C3D1DAEDC220038A655 /* Trump vs HillaryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42519C1D1DAEDC220038A655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42519C2D1DAEDC220038A655 /* LaunchScreen.storyboard in Resources */,
+				42519C2A1DAEDC220038A655 /* Assets.xcassets in Resources */,
+				42519C281DAEDC220038A655 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42519C311DAEDC220038A655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42519C3C1DAEDC220038A655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42519C1B1DAEDC220038A655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42519C251DAEDC220038A655 /* ViewController.swift in Sources */,
+				42519C231DAEDC220038A655 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42519C2F1DAEDC220038A655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42519C381DAEDC220038A655 /* Trump_vs_HillaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42519C3A1DAEDC220038A655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42519C431DAEDC220038A655 /* Trump_vs_HillaryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42519C351DAEDC220038A655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42519C1E1DAEDC220038A655 /* Trump vs Hillary */;
+			targetProxy = 42519C341DAEDC220038A655 /* PBXContainerItemProxy */;
+		};
+		42519C401DAEDC220038A655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42519C1E1DAEDC220038A655 /* Trump vs Hillary */;
+			targetProxy = 42519C3F1DAEDC220038A655 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42519C261DAEDC220038A655 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42519C271DAEDC220038A655 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42519C2B1DAEDC220038A655 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42519C2C1DAEDC220038A655 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42519C451DAEDC220038A655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42519C461DAEDC220038A655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42519C481DAEDC220038A655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 565DE2Z895;
+				INFOPLIST_FILE = "Trump vs Hillary/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teamapps.Trump-vs-Hillary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		42519C491DAEDC220038A655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 565DE2Z895;
+				INFOPLIST_FILE = "Trump vs Hillary/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teamapps.Trump-vs-Hillary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		42519C4B1DAEDC220038A655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 565DE2Z895;
+				INFOPLIST_FILE = "Trump vs HillaryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teamapps.Trump-vs-HillaryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trump vs Hillary.app/Trump vs Hillary";
+			};
+			name = Debug;
+		};
+		42519C4C1DAEDC220038A655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 565DE2Z895;
+				INFOPLIST_FILE = "Trump vs HillaryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teamapps.Trump-vs-HillaryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trump vs Hillary.app/Trump vs Hillary";
+			};
+			name = Release;
+		};
+		42519C4E1DAEDC220038A655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 565DE2Z895;
+				INFOPLIST_FILE = "Trump vs HillaryUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teamapps.Trump-vs-HillaryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Trump vs Hillary";
+			};
+			name = Debug;
+		};
+		42519C4F1DAEDC220038A655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 565DE2Z895;
+				INFOPLIST_FILE = "Trump vs HillaryUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teamapps.Trump-vs-HillaryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Trump vs Hillary";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42519C1A1DAEDC220038A655 /* Build configuration list for PBXProject "Trump vs Hillary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42519C451DAEDC220038A655 /* Debug */,
+				42519C461DAEDC220038A655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42519C471DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs Hillary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42519C481DAEDC220038A655 /* Debug */,
+				42519C491DAEDC220038A655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42519C4A1DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs HillaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42519C4B1DAEDC220038A655 /* Debug */,
+				42519C4C1DAEDC220038A655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42519C4D1DAEDC220038A655 /* Build configuration list for PBXNativeTarget "Trump vs HillaryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42519C4E1DAEDC220038A655 /* Debug */,
+				42519C4F1DAEDC220038A655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42519C171DAEDC220038A655 /* Project object */;
+}
