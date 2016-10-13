@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jag-dm-GIA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -53,6 +53,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="facebookLoginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Op-Md-n84"/>
+                                            <segue destination="Jag-dm-GIA" kind="show" identifier="VOTE" id="4HK-9F-jSh"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook-color" translatesAutoresizingMaskIntoConstraints="NO" id="E4m-Mg-slg">
@@ -103,9 +104,6 @@
                             <constraint firstItem="dGf-5G-mAI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zUG-V0-C3X"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="tPd-F7-hOs" kind="show" identifier="VOTE" id="Bah-GB-Beg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -411,7 +409,318 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u2r-ei-Koa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.79999999999995" y="35.532233883058474"/>
+            <point key="canvasLocation" x="996" y="36"/>
+        </scene>
+        <!--VoteVC-->
+        <scene sceneID="puK-2z-Sfo">
+            <objects>
+                <viewController id="Jag-dm-GIA" customClass="VoteVC" customModule="Trump_vs_Hillary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zHl-aC-ho6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Om2-xs-nkZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tor-PM-JP7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="USN-qP-s0i">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8x-bR-eMR">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hillary" translatesAutoresizingMaskIntoConstraints="NO" id="9qo-Ng-Vpa" customClass="roundImage" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="YYx-Wx-eyP"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="nqR-Pb-ClD"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="qyN-D6-j0v"/>
+                                                    <constraint firstAttribute="width" constant="80" id="yD8-Qv-bOC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hillary Clinton: Democratic Party" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-Hz-oFH">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="280" id="My2-aV-TRy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ8-Sy-7gW" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="ftm-cQ-NRv"/>
+                                                    <constraint firstAttribute="height" constant="100" id="khZ-BJ-fLg"/>
+                                                </constraints>
+                                                <state key="normal" image="like"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Votes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXQ-4C-daG">
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTg-kq-aKN">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="tTg-kq-aKN" firstAttribute="top" secondItem="d8x-bR-eMR" secondAttribute="top" constant="10" id="GA2-PB-yik"/>
+                                            <constraint firstItem="bfk-Hz-oFH" firstAttribute="leading" secondItem="d8x-bR-eMR" secondAttribute="leading" constant="8" id="Mpu-M0-cxa"/>
+                                            <constraint firstItem="tTg-kq-aKN" firstAttribute="centerX" secondItem="d8x-bR-eMR" secondAttribute="centerX" id="Sc6-Lx-9dL"/>
+                                            <constraint firstItem="OJ8-Sy-7gW" firstAttribute="centerY" secondItem="d8x-bR-eMR" secondAttribute="centerY" id="WLC-ed-Pwi"/>
+                                            <constraint firstItem="zXQ-4C-daG" firstAttribute="centerY" secondItem="OJ8-Sy-7gW" secondAttribute="centerY" id="WSK-fR-2an"/>
+                                            <constraint firstItem="9qo-Ng-Vpa" firstAttribute="top" secondItem="d8x-bR-eMR" secondAttribute="top" constant="8" id="kMw-Oz-2tC"/>
+                                            <constraint firstItem="zXQ-4C-daG" firstAttribute="centerX" secondItem="d8x-bR-eMR" secondAttribute="centerX" id="lV3-g7-W1M"/>
+                                            <constraint firstAttribute="trailing" secondItem="OJ8-Sy-7gW" secondAttribute="trailing" constant="8" id="lob-Km-FkW"/>
+                                            <constraint firstItem="9qo-Ng-Vpa" firstAttribute="leading" secondItem="d8x-bR-eMR" secondAttribute="leading" constant="8" id="s2E-cY-h4w"/>
+                                            <constraint firstItem="bfk-Hz-oFH" firstAttribute="top" secondItem="9qo-Ng-Vpa" secondAttribute="bottom" constant="4" id="xcc-LV-TIv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bha-Em-gBz">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svT-Xi-khH">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Votes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxz-tV-T5d">
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRf-4P-NAu" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="3EI-9J-aAr"/>
+                                                    <constraint firstAttribute="height" constant="100" id="Vgu-Wo-7Mh"/>
+                                                </constraints>
+                                                <state key="normal" image="like"/>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trump" translatesAutoresizingMaskIntoConstraints="NO" id="7Ub-sY-VkC" customClass="roundImage" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="CMY-pL-hfj"/>
+                                                    <constraint firstAttribute="width" constant="80" id="OfH-96-5w2"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="VcR-Bm-t4Y"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="tp5-Q1-QtD"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donald J. Trump: Republican Party" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g12-cQ-lPA">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="280" id="LBa-h2-UzQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="7Ub-sY-VkC" firstAttribute="leading" secondItem="bha-Em-gBz" secondAttribute="leading" constant="8" id="0O5-oy-e5w"/>
+                                            <constraint firstAttribute="trailing" secondItem="dRf-4P-NAu" secondAttribute="trailing" constant="8" id="4FU-iR-1vd"/>
+                                            <constraint firstItem="7Ub-sY-VkC" firstAttribute="top" secondItem="bha-Em-gBz" secondAttribute="top" constant="8" id="5bd-nc-Clq"/>
+                                            <constraint firstItem="dRf-4P-NAu" firstAttribute="centerY" secondItem="bha-Em-gBz" secondAttribute="centerY" id="7Lj-vB-7j5"/>
+                                            <constraint firstItem="g12-cQ-lPA" firstAttribute="leading" secondItem="bha-Em-gBz" secondAttribute="leading" constant="8" id="A52-h9-ixB"/>
+                                            <constraint firstItem="Mxz-tV-T5d" firstAttribute="centerX" secondItem="bha-Em-gBz" secondAttribute="centerX" id="DL1-r6-4bq"/>
+                                            <constraint firstItem="Mxz-tV-T5d" firstAttribute="centerY" secondItem="dRf-4P-NAu" secondAttribute="centerY" id="H77-dA-ytP"/>
+                                            <constraint firstItem="g12-cQ-lPA" firstAttribute="top" secondItem="7Ub-sY-VkC" secondAttribute="bottom" constant="4" id="l8d-Qq-7zr"/>
+                                            <constraint firstItem="svT-Xi-khH" firstAttribute="top" secondItem="bha-Em-gBz" secondAttribute="top" constant="10" id="pZl-bg-qyN"/>
+                                            <constraint firstItem="svT-Xi-khH" firstAttribute="centerX" secondItem="bha-Em-gBz" secondAttribute="centerX" id="u2q-qu-yuQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gb-NG-3vw">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-YW-a4X">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Votes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeA-fu-CXV">
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssc-Vs-nfi" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="GsC-pG-4Dh"/>
+                                                    <constraint firstAttribute="width" constant="100" id="jwQ-g0-FSR"/>
+                                                </constraints>
+                                                <state key="normal" image="like"/>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gary" translatesAutoresizingMaskIntoConstraints="NO" id="mE5-D6-gha" customClass="roundImage" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Rjf-1J-LnS"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="aFT-h7-ID6"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="oBK-Z8-Afj"/>
+                                                    <constraint firstAttribute="width" constant="80" id="rbb-GM-rvs"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gary Johnson: Libertarian Party" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGe-dj-M17">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="280" id="mCE-Md-PAI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ib0-YW-a4X" firstAttribute="centerX" secondItem="2gb-NG-3vw" secondAttribute="centerX" id="2Db-Wq-qch"/>
+                                            <constraint firstItem="zeA-fu-CXV" firstAttribute="centerX" secondItem="2gb-NG-3vw" secondAttribute="centerX" id="AqG-8T-Soy"/>
+                                            <constraint firstItem="ssc-Vs-nfi" firstAttribute="centerY" secondItem="2gb-NG-3vw" secondAttribute="centerY" id="L9z-My-80g"/>
+                                            <constraint firstItem="nGe-dj-M17" firstAttribute="top" secondItem="mE5-D6-gha" secondAttribute="bottom" constant="4" id="LWs-cg-cvZ"/>
+                                            <constraint firstItem="mE5-D6-gha" firstAttribute="leading" secondItem="2gb-NG-3vw" secondAttribute="leading" constant="8" id="Sza-Oz-RQ8"/>
+                                            <constraint firstItem="mE5-D6-gha" firstAttribute="top" secondItem="2gb-NG-3vw" secondAttribute="top" constant="8" id="ciw-H7-WnJ"/>
+                                            <constraint firstItem="ib0-YW-a4X" firstAttribute="top" secondItem="2gb-NG-3vw" secondAttribute="top" constant="10" id="kz0-2U-JUb"/>
+                                            <constraint firstItem="nGe-dj-M17" firstAttribute="leading" secondItem="2gb-NG-3vw" secondAttribute="leading" constant="8" id="uVm-hZ-pF2"/>
+                                            <constraint firstAttribute="trailing" secondItem="ssc-Vs-nfi" secondAttribute="trailing" constant="8" id="vZT-hD-2Y3"/>
+                                            <constraint firstItem="zeA-fu-CXV" firstAttribute="centerY" secondItem="ssc-Vs-nfi" secondAttribute="centerY" id="x4Y-J4-z6i"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZx-6M-dpG">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jill" translatesAutoresizingMaskIntoConstraints="NO" id="kcJ-jP-8QO" customClass="roundImage" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Ry1-xB-Qks"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="SJw-It-oXJ"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="ZwZ-dv-0LS"/>
+                                                    <constraint firstAttribute="height" constant="80" id="cmH-lb-k2E"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Jill Stein: Green Party" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08i-Wg-3ze">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="280" id="Oee-nO-Vty"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23v-e6-lti" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="0Lc-Zv-cAB"/>
+                                                    <constraint firstAttribute="height" constant="100" id="2Wv-NS-vaT"/>
+                                                </constraints>
+                                                <state key="normal" image="like"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Votes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeT-r0-gTT">
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mP3-Gi-Foy">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="kcJ-jP-8QO" firstAttribute="top" secondItem="OZx-6M-dpG" secondAttribute="top" constant="8" id="6d1-ZM-PDa"/>
+                                            <constraint firstItem="mP3-Gi-Foy" firstAttribute="centerX" secondItem="OZx-6M-dpG" secondAttribute="centerX" id="Lnn-RR-Cwf"/>
+                                            <constraint firstItem="23v-e6-lti" firstAttribute="centerY" secondItem="OZx-6M-dpG" secondAttribute="centerY" id="Pbu-f9-NYX"/>
+                                            <constraint firstAttribute="trailing" secondItem="23v-e6-lti" secondAttribute="trailing" constant="8" id="VxE-kN-K2H"/>
+                                            <constraint firstItem="08i-Wg-3ze" firstAttribute="leading" secondItem="OZx-6M-dpG" secondAttribute="leading" constant="8" id="gdS-WX-2q8"/>
+                                            <constraint firstItem="kcJ-jP-8QO" firstAttribute="leading" secondItem="OZx-6M-dpG" secondAttribute="leading" constant="8" id="jkA-3a-yGb"/>
+                                            <constraint firstItem="mP3-Gi-Foy" firstAttribute="top" secondItem="OZx-6M-dpG" secondAttribute="top" constant="10" id="lpk-nk-09a"/>
+                                            <constraint firstItem="VeT-r0-gTT" firstAttribute="centerX" secondItem="OZx-6M-dpG" secondAttribute="centerX" id="rE0-FO-7vY"/>
+                                            <constraint firstItem="08i-Wg-3ze" firstAttribute="top" secondItem="kcJ-jP-8QO" secondAttribute="bottom" constant="4" id="xZh-54-cyS"/>
+                                            <constraint firstItem="VeT-r0-gTT" firstAttribute="centerY" secondItem="23v-e6-lti" secondAttribute="centerY" id="yBy-RB-Jzm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQr-6f-CeR">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Votes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ad9-9s-7Vw">
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="evan" translatesAutoresizingMaskIntoConstraints="NO" id="wmu-fl-WYK" customClass="roundImage" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="FSX-K8-cJr"/>
+                                                    <constraint firstAttribute="height" constant="80" id="I9n-CE-cUZ"/>
+                                                    <constraint firstAttribute="width" constant="80" id="LRx-gO-v1o"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="vaA-1R-3y2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evan McMullin: Independent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-BH-GPX">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="280" id="2kC-an-eDh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ti-cT-C8L" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="pk4-D5-elo"/>
+                                                    <constraint firstAttribute="height" constant="100" id="qXZ-iq-AsP"/>
+                                                </constraints>
+                                                <state key="normal" image="like"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq7-WH-175">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.40392156862745099" green="0.22745098039215686" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="dq7-WH-175" firstAttribute="top" secondItem="hQr-6f-CeR" secondAttribute="top" constant="10" id="3Zv-rh-FQd"/>
+                                            <constraint firstItem="ad9-9s-7Vw" firstAttribute="centerY" secondItem="8ti-cT-C8L" secondAttribute="centerY" id="9ra-y5-IQt"/>
+                                            <constraint firstAttribute="trailing" secondItem="8ti-cT-C8L" secondAttribute="trailing" constant="8" id="Apa-tg-EWN"/>
+                                            <constraint firstItem="tHV-BH-GPX" firstAttribute="leading" secondItem="hQr-6f-CeR" secondAttribute="leading" constant="8" id="FXU-gh-AND"/>
+                                            <constraint firstItem="wmu-fl-WYK" firstAttribute="top" secondItem="hQr-6f-CeR" secondAttribute="top" constant="8" id="HFv-iR-XJL"/>
+                                            <constraint firstItem="dq7-WH-175" firstAttribute="centerX" secondItem="hQr-6f-CeR" secondAttribute="centerX" id="KFq-XT-zF8"/>
+                                            <constraint firstItem="8ti-cT-C8L" firstAttribute="centerY" secondItem="hQr-6f-CeR" secondAttribute="centerY" id="Urb-EA-bXG"/>
+                                            <constraint firstItem="wmu-fl-WYK" firstAttribute="leading" secondItem="hQr-6f-CeR" secondAttribute="leading" constant="8" id="mMb-xy-RrB"/>
+                                            <constraint firstItem="tHV-BH-GPX" firstAttribute="top" secondItem="wmu-fl-WYK" secondAttribute="bottom" constant="4" id="vw9-Z3-ZLh"/>
+                                            <constraint firstItem="ad9-9s-7Vw" firstAttribute="centerX" secondItem="hQr-6f-CeR" secondAttribute="centerX" id="xil-i0-e4r"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="OZx-6M-dpG" secondAttribute="trailing" id="3Gm-TW-Fmg"/>
+                                    <constraint firstAttribute="trailing" secondItem="hQr-6f-CeR" secondAttribute="trailing" id="4e3-k0-g7q"/>
+                                    <constraint firstAttribute="bottom" secondItem="hQr-6f-CeR" secondAttribute="bottom" id="Df5-JK-WHd"/>
+                                    <constraint firstAttribute="trailing" secondItem="bha-Em-gBz" secondAttribute="trailing" id="FHU-oN-Klm"/>
+                                    <constraint firstItem="hQr-6f-CeR" firstAttribute="leading" secondItem="USN-qP-s0i" secondAttribute="leading" id="GQU-ZK-z58"/>
+                                    <constraint firstAttribute="trailing" secondItem="2gb-NG-3vw" secondAttribute="trailing" id="LlT-qG-kV7"/>
+                                    <constraint firstItem="bha-Em-gBz" firstAttribute="leading" secondItem="USN-qP-s0i" secondAttribute="leading" id="ZeN-8a-qhi"/>
+                                    <constraint firstItem="hQr-6f-CeR" firstAttribute="top" secondItem="OZx-6M-dpG" secondAttribute="bottom" id="dpV-Gs-BS4"/>
+                                    <constraint firstItem="bha-Em-gBz" firstAttribute="top" secondItem="d8x-bR-eMR" secondAttribute="bottom" id="dxm-2K-gHw"/>
+                                    <constraint firstItem="d8x-bR-eMR" firstAttribute="leading" secondItem="USN-qP-s0i" secondAttribute="leading" id="f7m-Si-d5E"/>
+                                    <constraint firstItem="2gb-NG-3vw" firstAttribute="top" secondItem="bha-Em-gBz" secondAttribute="bottom" id="gmY-R9-6Wi"/>
+                                    <constraint firstItem="d8x-bR-eMR" firstAttribute="top" secondItem="USN-qP-s0i" secondAttribute="top" id="mwf-8d-NTi"/>
+                                    <constraint firstItem="hQr-6f-CeR" firstAttribute="top" secondItem="OZx-6M-dpG" secondAttribute="bottom" id="oev-kJ-kGy"/>
+                                    <constraint firstAttribute="trailing" secondItem="d8x-bR-eMR" secondAttribute="trailing" id="oh2-Ul-ejM"/>
+                                    <constraint firstItem="OZx-6M-dpG" firstAttribute="top" secondItem="2gb-NG-3vw" secondAttribute="bottom" id="pfg-Yp-Kdb"/>
+                                    <constraint firstItem="OZx-6M-dpG" firstAttribute="leading" secondItem="USN-qP-s0i" secondAttribute="leading" id="uvO-Yo-c8t"/>
+                                    <constraint firstItem="2gb-NG-3vw" firstAttribute="leading" secondItem="USN-qP-s0i" secondAttribute="leading" id="zzZ-Pk-5mk"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ZS-LJ-r3W" customClass="GADBannerView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GNO-Du-uIe"/>
+                                    <constraint firstAttribute="width" constant="320" id="T79-BV-O56"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="USN-qP-s0i" firstAttribute="top" secondItem="zHl-aC-ho6" secondAttribute="bottom" id="7gD-L4-yR1"/>
+                            <constraint firstItem="Om2-xs-nkZ" firstAttribute="top" secondItem="USN-qP-s0i" secondAttribute="bottom" constant="50" id="FX2-Ku-9qV"/>
+                            <constraint firstAttribute="trailing" secondItem="USN-qP-s0i" secondAttribute="trailing" id="Si5-NO-Hs4"/>
+                            <constraint firstItem="7ZS-LJ-r3W" firstAttribute="centerX" secondItem="Tor-PM-JP7" secondAttribute="centerX" id="q1Y-i0-rE6"/>
+                            <constraint firstItem="USN-qP-s0i" firstAttribute="leading" secondItem="Tor-PM-JP7" secondAttribute="leading" id="uV7-bU-w5z"/>
+                            <constraint firstAttribute="bottom" secondItem="7ZS-LJ-r3W" secondAttribute="bottom" id="wjJ-9j-gTH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="7ZS-LJ-r3W" id="zpV-ii-TrP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MuT-d9-zfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="36"/>
         </scene>
     </scenes>
     <resources>

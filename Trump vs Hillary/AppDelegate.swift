@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FBSDKLoginKit
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        // AdMob Initialization:
+        // App ID: ca-app-pub-8625776473820420~6307822794
+        // Ad unit ID: ca-app-pub-8625776473820420/
+        
+        // Test app-id: ca-app-pub-3940256099942544~1458002511
+        
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
+        
         return true
     }
 

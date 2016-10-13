@@ -25,6 +25,12 @@
 		42FAE34F1DAEEDA400645BCF /* roundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE34E1DAEEDA400645BCF /* roundImage.swift */; };
 		646459809F68801EEE9F326D /* Pods_Trump_vs_Hillary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1782AB16F57349415E3E23 /* Pods_Trump_vs_Hillary.framework */; };
 		6A71D30E1BDAC6D3CCE516B4 /* Pods_Trump_vs_HillaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9107C216A6CBE5503AA69BCD /* Pods_Trump_vs_HillaryTests.framework */; };
+		933C63551DAF1BBA00423865 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C63541DAF1BBA00423865 /* GoogleMobileAds.framework */; };
+		933C63571DAF1EA200423865 /* VoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933C63561DAF1EA200423865 /* VoteVC.swift */; };
+		933C63591DAF20AC00423865 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C63581DAF20AC00423865 /* GoogleInterchangeUtilities.framework */; };
+		933C635B1DAF20AE00423865 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C635A1DAF20AE00423865 /* GoogleNetworkingUtilities.framework */; };
+		933C635D1DAF20B100423865 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C635C1DAF20B100423865 /* GoogleSymbolUtilities.framework */; };
+		933C635F1DAF20B300423865 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C635E1DAF20B300423865 /* GoogleUtilities.framework */; };
 		F526A02159B2222E8DBDDDEE /* Pods_Trump_vs_HillaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC6EE813F7DDB835D9A7D3B /* Pods_Trump_vs_HillaryUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +81,12 @@
 		87BC6DFD8F1E6A81FD9D4562 /* Pods-Trump vs HillaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs HillaryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs HillaryTests/Pods-Trump vs HillaryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CF7B95EC94792E25A9ADF49 /* Pods-Trump vs HillaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs HillaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs HillaryTests/Pods-Trump vs HillaryTests.release.xcconfig"; sourceTree = "<group>"; };
 		9107C216A6CBE5503AA69BCD /* Pods_Trump_vs_HillaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trump_vs_HillaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		933C63541DAF1BBA00423865 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		933C63561DAF1EA200423865 /* VoteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteVC.swift; sourceTree = "<group>"; };
+		933C63581DAF20AC00423865 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Pods/GoogleInterchangeUtilities/Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		933C635A1DAF20AE00423865 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Pods/GoogleNetworkingUtilities/Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		933C635C1DAF20B100423865 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Pods/GoogleSymbolUtilities/Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		933C635E1DAF20B300423865 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Pods/GoogleUtilities/Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
 		9E10731759DFC5B7FE05642B /* Pods-Trump vs HillaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs HillaryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs HillaryUITests/Pods-Trump vs HillaryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AB1782AB16F57349415E3E23 /* Pods_Trump_vs_Hillary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trump_vs_Hillary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31A7C59504FBBCC69F89ECD /* Pods-Trump vs HillaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs HillaryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs HillaryUITests/Pods-Trump vs HillaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +99,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933C635B1DAF20AE00423865 /* GoogleNetworkingUtilities.framework in Frameworks */,
+				933C63551DAF1BBA00423865 /* GoogleMobileAds.framework in Frameworks */,
 				646459809F68801EEE9F326D /* Pods_Trump_vs_Hillary.framework in Frameworks */,
+				933C635F1DAF20B300423865 /* GoogleUtilities.framework in Frameworks */,
+				933C63591DAF20AC00423865 /* GoogleInterchangeUtilities.framework in Frameworks */,
+				933C635D1DAF20B100423865 /* GoogleSymbolUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +158,7 @@
 				42519C221DAEDC220038A655 /* AppDelegate.swift */,
 				42519C241DAEDC220038A655 /* ViewController.swift */,
 				4234976F1DAEF75200A2236E /* CandidatesVC.swift */,
+				933C63561DAF1EA200423865 /* VoteVC.swift */,
 				42519C261DAEDC220038A655 /* Main.storyboard */,
 				42519C291DAEDC220038A655 /* Assets.xcassets */,
 				42519C2B1DAEDC220038A655 /* LaunchScreen.storyboard */,
@@ -186,6 +204,11 @@
 		468317A396FE5D05ADCF8180 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				933C635E1DAF20B300423865 /* GoogleUtilities.framework */,
+				933C635C1DAF20B100423865 /* GoogleSymbolUtilities.framework */,
+				933C635A1DAF20AE00423865 /* GoogleNetworkingUtilities.framework */,
+				933C63581DAF20AC00423865 /* GoogleInterchangeUtilities.framework */,
+				933C63541DAF1BBA00423865 /* GoogleMobileAds.framework */,
 				AB1782AB16F57349415E3E23 /* Pods_Trump_vs_Hillary.framework */,
 				9107C216A6CBE5503AA69BCD /* Pods_Trump_vs_HillaryTests.framework */,
 				6DC6EE813F7DDB835D9A7D3B /* Pods_Trump_vs_HillaryUITests.framework */,
@@ -490,6 +513,7 @@
 				427232461DAEE4D300EA3C89 /* Constants.swift in Sources */,
 				42519C251DAEDC220038A655 /* ViewController.swift in Sources */,
 				42519C231DAEDC220038A655 /* AppDelegate.swift in Sources */,
+				933C63571DAF1EA200423865 /* VoteVC.swift in Sources */,
 				427232411DAEE08A00EA3C89 /* MaterialButton.swift in Sources */,
 				42FAE34F1DAEEDA400645BCF /* roundImage.swift in Sources */,
 				427232441DAEE10F00EA3C89 /* MaterialView.swift in Sources */,
@@ -653,6 +677,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleNetworkingUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleSymbolUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks",
 				);
 				INFOPLIST_FILE = "Trump vs Hillary/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -673,6 +701,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleNetworkingUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleSymbolUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks",
 				);
 				INFOPLIST_FILE = "Trump vs Hillary/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
