@@ -170,6 +170,15 @@
                                                 <color key="textColor" red="0.93333333333333335" green="1" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYw-mU-azw">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="hK7-Zf-k2f"/>
+                                                    <constraint firstAttribute="height" constant="80" id="pxT-6t-Qet"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="sendToHillaryWebsite:" destination="Jag-dm-GIA" eventType="touchUpInside" id="wH2-iG-OpM"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -180,10 +189,12 @@
                                             <constraint firstItem="zXQ-4C-daG" firstAttribute="top" secondItem="tTg-kq-aKN" secondAttribute="bottom" constant="8" id="T89-Vu-tMD"/>
                                             <constraint firstItem="OJ8-Sy-7gW" firstAttribute="centerY" secondItem="d8x-bR-eMR" secondAttribute="centerY" id="WLC-ed-Pwi"/>
                                             <constraint firstItem="zXQ-4C-daG" firstAttribute="centerY" secondItem="OJ8-Sy-7gW" secondAttribute="centerY" id="WSK-fR-2an"/>
+                                            <constraint firstItem="nYw-mU-azw" firstAttribute="centerX" secondItem="9qo-Ng-Vpa" secondAttribute="centerX" id="b1o-mS-KtF"/>
                                             <constraint firstItem="9qo-Ng-Vpa" firstAttribute="top" secondItem="d8x-bR-eMR" secondAttribute="top" constant="8" id="kMw-Oz-2tC"/>
                                             <constraint firstItem="zXQ-4C-daG" firstAttribute="centerX" secondItem="d8x-bR-eMR" secondAttribute="centerX" id="lV3-g7-W1M"/>
                                             <constraint firstAttribute="trailing" secondItem="OJ8-Sy-7gW" secondAttribute="trailing" constant="8" id="lob-Km-FkW"/>
                                             <constraint firstItem="kzL-q7-cCO" firstAttribute="centerX" secondItem="OJ8-Sy-7gW" secondAttribute="centerX" id="maw-qe-eOt"/>
+                                            <constraint firstItem="nYw-mU-azw" firstAttribute="centerY" secondItem="9qo-Ng-Vpa" secondAttribute="centerY" id="qtI-gb-XeP"/>
                                             <constraint firstItem="9qo-Ng-Vpa" firstAttribute="leading" secondItem="d8x-bR-eMR" secondAttribute="leading" constant="8" id="s2E-cY-h4w"/>
                                             <constraint firstItem="hsY-Sp-cV6" firstAttribute="centerX" secondItem="OJ8-Sy-7gW" secondAttribute="centerX" id="wAH-Vh-T7g"/>
                                             <constraint firstItem="bfk-Hz-oFH" firstAttribute="top" secondItem="9qo-Ng-Vpa" secondAttribute="bottom" constant="4" id="xcc-LV-TIv"/>
@@ -237,6 +248,15 @@
                                                 <color key="textColor" red="0.93333333333333335" green="1" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOi-hR-gzO">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="gKw-ON-6jS"/>
+                                                    <constraint firstAttribute="width" constant="80" id="nfw-sR-Xqq"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="sendToTrumpWebsite:" destination="Jag-dm-GIA" eventType="touchUpInside" id="BSc-46-y37"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -246,11 +266,13 @@
                                             <constraint firstItem="q30-OG-f5c" firstAttribute="centerX" secondItem="dRf-4P-NAu" secondAttribute="centerX" id="7BI-bu-QbI"/>
                                             <constraint firstItem="dRf-4P-NAu" firstAttribute="centerY" secondItem="bha-Em-gBz" secondAttribute="centerY" id="7Lj-vB-7j5"/>
                                             <constraint firstItem="g12-cQ-lPA" firstAttribute="leading" secondItem="bha-Em-gBz" secondAttribute="leading" constant="8" id="A52-h9-ixB"/>
+                                            <constraint firstItem="sOi-hR-gzO" firstAttribute="centerY" secondItem="7Ub-sY-VkC" secondAttribute="centerY" id="Bpt-YO-Lwh"/>
                                             <constraint firstItem="Mxz-tV-T5d" firstAttribute="centerX" secondItem="bha-Em-gBz" secondAttribute="centerX" id="DL1-r6-4bq"/>
                                             <constraint firstItem="Mxz-tV-T5d" firstAttribute="centerY" secondItem="dRf-4P-NAu" secondAttribute="centerY" id="H77-dA-ytP"/>
                                             <constraint firstItem="YPG-6k-kSV" firstAttribute="centerX" secondItem="dRf-4P-NAu" secondAttribute="centerX" id="M9J-fI-uFg"/>
                                             <constraint firstItem="Mxz-tV-T5d" firstAttribute="top" secondItem="svT-Xi-khH" secondAttribute="bottom" constant="8" id="NuT-Ab-m6J"/>
                                             <constraint firstItem="q30-OG-f5c" firstAttribute="top" secondItem="dRf-4P-NAu" secondAttribute="bottom" constant="4" id="VYO-3L-Meu"/>
+                                            <constraint firstItem="sOi-hR-gzO" firstAttribute="centerX" secondItem="7Ub-sY-VkC" secondAttribute="centerX" id="hH2-aU-uxP"/>
                                             <constraint firstItem="dRf-4P-NAu" firstAttribute="top" secondItem="YPG-6k-kSV" secondAttribute="bottom" constant="4" id="hIQ-Oa-9eQ"/>
                                             <constraint firstItem="g12-cQ-lPA" firstAttribute="top" secondItem="7Ub-sY-VkC" secondAttribute="bottom" constant="4" id="l8d-Qq-7zr"/>
                                             <constraint firstItem="svT-Xi-khH" firstAttribute="centerX" secondItem="bha-Em-gBz" secondAttribute="centerX" id="u2q-qu-yuQ"/>
@@ -305,6 +327,15 @@
                                                 <color key="textColor" red="0.93333333333333335" green="1" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsE-QE-WMd">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="ZFc-5q-GPw"/>
+                                                    <constraint firstAttribute="width" constant="80" id="q2P-fp-Ngc"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="sendToJohnsonWebsite:" destination="Jag-dm-GIA" eventType="touchUpInside" id="07A-IZ-pog"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -319,9 +350,11 @@
                                             <constraint firstItem="C6U-7x-v6I" firstAttribute="top" secondItem="ssc-Vs-nfi" secondAttribute="bottom" constant="4" id="Tyt-87-QLM"/>
                                             <constraint firstItem="ssc-Vs-nfi" firstAttribute="top" secondItem="qm7-OQ-Ugv" secondAttribute="bottom" constant="4" id="Zzd-C4-RfV"/>
                                             <constraint firstItem="mE5-D6-gha" firstAttribute="top" secondItem="2gb-NG-3vw" secondAttribute="top" constant="8" id="ciw-H7-WnJ"/>
+                                            <constraint firstItem="AsE-QE-WMd" firstAttribute="centerX" secondItem="mE5-D6-gha" secondAttribute="centerX" id="eZp-1w-8oB"/>
                                             <constraint firstItem="nGe-dj-M17" firstAttribute="leading" secondItem="2gb-NG-3vw" secondAttribute="leading" constant="8" id="uVm-hZ-pF2"/>
                                             <constraint firstAttribute="trailing" secondItem="ssc-Vs-nfi" secondAttribute="trailing" constant="8" id="vZT-hD-2Y3"/>
                                             <constraint firstItem="zeA-fu-CXV" firstAttribute="centerY" secondItem="ssc-Vs-nfi" secondAttribute="centerY" id="x4Y-J4-z6i"/>
+                                            <constraint firstItem="AsE-QE-WMd" firstAttribute="centerY" secondItem="mE5-D6-gha" secondAttribute="centerY" id="xVN-OM-95V"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZx-6M-dpG">
@@ -372,16 +405,27 @@
                                                 <color key="textColor" red="0.93333333333333335" green="1" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mks-6Q-77G">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="VeJ-OQ-cQv"/>
+                                                    <constraint firstAttribute="width" constant="80" id="bm3-QL-1kM"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="sendToSteinWebsite:" destination="Jag-dm-GIA" eventType="touchUpInside" id="HUp-dq-MNo"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="kcJ-jP-8QO" firstAttribute="top" secondItem="OZx-6M-dpG" secondAttribute="top" constant="8" id="6d1-ZM-PDa"/>
+                                            <constraint firstItem="mks-6Q-77G" firstAttribute="centerY" secondItem="kcJ-jP-8QO" secondAttribute="centerY" id="9Dd-YJ-syI"/>
                                             <constraint firstItem="23v-e6-lti" firstAttribute="top" secondItem="LbY-nS-qln" secondAttribute="bottom" constant="4" id="ExS-iG-JfK"/>
                                             <constraint firstItem="mP3-Gi-Foy" firstAttribute="centerX" secondItem="OZx-6M-dpG" secondAttribute="centerX" id="Lnn-RR-Cwf"/>
                                             <constraint firstItem="LbY-nS-qln" firstAttribute="centerX" secondItem="23v-e6-lti" secondAttribute="centerX" id="OPB-L7-kuE"/>
                                             <constraint firstItem="eZx-pQ-Oyx" firstAttribute="top" secondItem="23v-e6-lti" secondAttribute="bottom" constant="4" id="PY0-75-uFb"/>
                                             <constraint firstItem="23v-e6-lti" firstAttribute="centerY" secondItem="OZx-6M-dpG" secondAttribute="centerY" id="Pbu-f9-NYX"/>
                                             <constraint firstAttribute="trailing" secondItem="23v-e6-lti" secondAttribute="trailing" constant="8" id="VxE-kN-K2H"/>
+                                            <constraint firstItem="mks-6Q-77G" firstAttribute="centerX" secondItem="kcJ-jP-8QO" secondAttribute="centerX" id="YWg-Tg-6P3"/>
                                             <constraint firstItem="08i-Wg-3ze" firstAttribute="leading" secondItem="OZx-6M-dpG" secondAttribute="leading" constant="8" id="gdS-WX-2q8"/>
                                             <constraint firstItem="kcJ-jP-8QO" firstAttribute="leading" secondItem="OZx-6M-dpG" secondAttribute="leading" constant="8" id="jkA-3a-yGb"/>
                                             <constraint firstItem="VeT-r0-gTT" firstAttribute="top" secondItem="mP3-Gi-Foy" secondAttribute="bottom" constant="8" id="neh-UF-o2B"/>
@@ -439,6 +483,15 @@
                                                 <color key="textColor" red="0.93333333333333335" green="1" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S3-2f-lIZ">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="npS-1x-vWS"/>
+                                                    <constraint firstAttribute="height" constant="80" id="qIu-mH-xNs"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="sendToMcMullinWebsite:" destination="Jag-dm-GIA" eventType="touchUpInside" id="La8-6u-N3I"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.40392156862745099" green="0.22745098039215686" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -447,9 +500,11 @@
                                             <constraint firstItem="ad9-9s-7Vw" firstAttribute="centerY" secondItem="8ti-cT-C8L" secondAttribute="centerY" id="9ra-y5-IQt"/>
                                             <constraint firstAttribute="trailing" secondItem="8ti-cT-C8L" secondAttribute="trailing" constant="8" id="Apa-tg-EWN"/>
                                             <constraint firstItem="8ti-cT-C8L" firstAttribute="top" secondItem="Rui-xe-ypc" secondAttribute="bottom" constant="4" id="DEK-rf-Os9"/>
+                                            <constraint firstItem="2S3-2f-lIZ" firstAttribute="centerY" secondItem="wmu-fl-WYK" secondAttribute="centerY" id="Dkf-VI-Od3"/>
                                             <constraint firstItem="tHV-BH-GPX" firstAttribute="leading" secondItem="hQr-6f-CeR" secondAttribute="leading" constant="8" id="FXU-gh-AND"/>
                                             <constraint firstItem="wmu-fl-WYK" firstAttribute="top" secondItem="hQr-6f-CeR" secondAttribute="top" constant="8" id="HFv-iR-XJL"/>
                                             <constraint firstItem="3hE-6u-dp3" firstAttribute="centerX" secondItem="8ti-cT-C8L" secondAttribute="centerX" id="HID-nx-aan"/>
+                                            <constraint firstItem="2S3-2f-lIZ" firstAttribute="centerX" secondItem="wmu-fl-WYK" secondAttribute="centerX" id="IxE-W6-FjM"/>
                                             <constraint firstItem="dq7-WH-175" firstAttribute="centerX" secondItem="hQr-6f-CeR" secondAttribute="centerX" id="KFq-XT-zF8"/>
                                             <constraint firstItem="8ti-cT-C8L" firstAttribute="centerY" secondItem="hQr-6f-CeR" secondAttribute="centerY" id="Urb-EA-bXG"/>
                                             <constraint firstItem="ad9-9s-7Vw" firstAttribute="top" secondItem="dq7-WH-175" secondAttribute="bottom" constant="8" id="kbf-i9-mWm"/>

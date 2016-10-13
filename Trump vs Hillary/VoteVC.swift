@@ -695,5 +695,38 @@ class VoteVC: UIViewController {
         
     }
     
+    // Send user to candidate website
+    
+    @IBAction func sendToHillaryWebsite(_ sender: AnyObject) {
+        
+        print("Send to Hillary website")
+        
+    }
+    
+    @IBAction func sendToTrumpWebsite(_ sender: AnyObject) {
+        
+        print("Send to Trump website")
+        
+    }
+    
+    @IBAction func sendToJohnsonWebsite(_ sender: AnyObject) {
+        
+        print("Send to Johnson website")
+        
+    }
+    
+    @IBAction func sendToSteinWebsite(_ sender: AnyObject) {
+        
+        print("Send to Stein website")
+        
+    }
+    
+    @IBAction func sendToMcMullinWebsite(_ sender: AnyObject) {
+        
+        print("Send to McMullin website")
+        
+    }
+    
+    
 
 }
