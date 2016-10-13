@@ -32,6 +32,7 @@ class CustomButton : UIButton {
     @IBInspectable var fontColor : UIColor = UIColor.white {
         didSet {
             self.tintColor = fontColor
+            
         }
     }
     override func awakeFromNib() {

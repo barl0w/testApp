@@ -12,6 +12,7 @@ class roundImage : UIImageView {
     
     override func layoutSubviews() {
         layer.cornerRadius = frame.size.width / 2
+        layer.backgroundColor = UIColor.white.cgColor
         clipsToBounds = true
     }
 }
