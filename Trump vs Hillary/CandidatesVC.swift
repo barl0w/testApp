@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import Firebase
+import SwiftKeychainWrapper
 
-class CandidatesVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+class CandidatesVC : UIViewController {
     
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        UIApplication.shared.statusBarStyle = .lightContent
-    }
-
+    @IBOutlet weak var likesLabel: UILabel!
+    @IBOutlet weak var likeButton: CustomButton!
+    
 }
+
+
+
+
+
+

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		423497701DAEF75200A2236E /* CandidatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4234976F1DAEF75200A2236E /* CandidatesVC.swift */; };
+		423497761DAF143D00A2236E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423497751DAF143D00A2236E /* DataService.swift */; };
 		42519C231DAEDC220038A655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42519C221DAEDC220038A655 /* AppDelegate.swift */; };
 		42519C251DAEDC220038A655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42519C241DAEDC220038A655 /* ViewController.swift */; };
 		42519C281DAEDC220038A655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42519C261DAEDC220038A655 /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		427232461DAEE4D300EA3C89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427232451DAEE4D300EA3C89 /* Constants.swift */; };
 		427232531DAEE57900EA3C89 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4272324F1DAEE57900EA3C89 /* ProgressHUD.bundle */; };
 		427232541DAEE57900EA3C89 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 427232511DAEE57900EA3C89 /* ProgressHUD.m */; };
-		42FAE34D1DAEE68A00645BCF /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE34C1DAEE68A00645BCF /* DataService.swift */; };
 		42FAE34F1DAEEDA400645BCF /* roundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE34E1DAEEDA400645BCF /* roundImage.swift */; };
 		646459809F68801EEE9F326D /* Pods_Trump_vs_Hillary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1782AB16F57349415E3E23 /* Pods_Trump_vs_Hillary.framework */; };
 		6A71D30E1BDAC6D3CCE516B4 /* Pods_Trump_vs_HillaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9107C216A6CBE5503AA69BCD /* Pods_Trump_vs_HillaryTests.framework */; };
@@ -47,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		4234976F1DAEF75200A2236E /* CandidatesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatesVC.swift; sourceTree = "<group>"; };
+		423497751DAF143D00A2236E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		42519C1F1DAEDC220038A655 /* Trump vs Hillary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trump vs Hillary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42519C221DAEDC220038A655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42519C241DAEDC220038A655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		427232501DAEE57900EA3C89 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		427232511DAEE57900EA3C89 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		427232521DAEE57900EA3C89 /* Trump-vs-Hillary-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Trump-vs-Hillary-Bridging-Header.h"; sourceTree = "<group>"; };
-		42FAE34C1DAEE68A00645BCF /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		42FAE34E1DAEEDA400645BCF /* roundImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundImage.swift; sourceTree = "<group>"; };
 		6DC6EE813F7DDB835D9A7D3B /* Pods_Trump_vs_HillaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trump_vs_HillaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BC6DFD8F1E6A81FD9D4562 /* Pods-Trump vs HillaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trump vs HillaryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trump vs HillaryTests/Pods-Trump vs HillaryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		42519C211DAEDC220038A655 /* Trump vs Hillary */ = {
 			isa = PBXGroup;
 			children = (
-				42FAE34C1DAEE68A00645BCF /* DataService.swift */,
+				423497751DAF143D00A2236E /* DataService.swift */,
 				427232421DAEE0F900EA3C89 /* MaterialDesign */,
 				427232371DAEDECC00EA3C89 /* Trump vs Hillary.entitlements */,
 				42519C221DAEDC220038A655 /* AppDelegate.swift */,
@@ -484,9 +484,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423497761DAF143D00A2236E /* DataService.swift in Sources */,
 				423497701DAEF75200A2236E /* CandidatesVC.swift in Sources */,
 				427232541DAEE57900EA3C89 /* ProgressHUD.m in Sources */,
-				42FAE34D1DAEE68A00645BCF /* DataService.swift in Sources */,
 				427232461DAEE4D300EA3C89 /* Constants.swift in Sources */,
 				42519C251DAEDC220038A655 /* ViewController.swift in Sources */,
 				42519C231DAEDC220038A655 /* AppDelegate.swift in Sources */,

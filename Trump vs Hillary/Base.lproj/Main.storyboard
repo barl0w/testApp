@@ -123,7 +123,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQN-EV-GOv">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQN-EV-GOv" customClass="PostCell" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hillary" translatesAutoresizingMaskIntoConstraints="NO" id="gfL-fL-XVu" customClass="roundImage" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                         <constraints>
@@ -145,17 +145,29 @@
                                             <constraint firstAttribute="height" constant="40" id="kEy-wB-cLb"/>
                                         </constraints>
                                         <state key="normal" image="like"/>
+                                        <connections>
+                                            <action selector="likeButtonTapped:" destination="tPd-F7-hOs" eventType="touchUpInside" id="XcT-Ft-hiM"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Li-Dy-ou1">
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWg-jl-jdm">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWg-jl-jdm">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="123" id="zHS-an-eeK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okU-7I-Htb">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="Ahj-ud-8av"/>
+                                            <constraint firstAttribute="height" constant="21" id="CtC-yW-nBR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -166,16 +178,18 @@
                                     <constraint firstItem="zWg-jl-jdm" firstAttribute="leading" secondItem="gfL-fL-XVu" secondAttribute="trailing" constant="5" id="6IW-Il-Ujy"/>
                                     <constraint firstItem="zWg-jl-jdm" firstAttribute="centerY" secondItem="5Li-Dy-ou1" secondAttribute="centerY" id="Abs-3N-LP6"/>
                                     <constraint firstAttribute="bottom" secondItem="qBe-Uu-gtw" secondAttribute="bottom" constant="10" id="Fiu-VL-OhB"/>
-                                    <constraint firstAttribute="bottom" secondItem="EbI-ac-17q" secondAttribute="bottom" constant="8" id="Ir7-Jy-KXK"/>
+                                    <constraint firstItem="okU-7I-Htb" firstAttribute="trailing" secondItem="EbI-ac-17q" secondAttribute="trailing" id="I1W-gT-5RJ"/>
+                                    <constraint firstItem="EbI-ac-17q" firstAttribute="centerY" secondItem="5Li-Dy-ou1" secondAttribute="centerY" id="Qaf-z2-XDL"/>
                                     <constraint firstAttribute="trailing" secondItem="EbI-ac-17q" secondAttribute="trailing" constant="8" id="SFm-U8-qjT"/>
                                     <constraint firstItem="5Li-Dy-ou1" firstAttribute="leading" secondItem="zWg-jl-jdm" secondAttribute="trailing" constant="6" id="Z40-9Z-EBH"/>
                                     <constraint firstItem="gfL-fL-XVu" firstAttribute="centerY" secondItem="bQN-EV-GOv" secondAttribute="centerY" constant="-8" id="b4E-Bd-jaD"/>
                                     <constraint firstItem="qBe-Uu-gtw" firstAttribute="top" secondItem="gfL-fL-XVu" secondAttribute="bottom" constant="6" id="hs5-o1-r6k"/>
+                                    <constraint firstItem="okU-7I-Htb" firstAttribute="top" secondItem="EbI-ac-17q" secondAttribute="bottom" constant="8" symbolic="YES" id="mJr-UH-oTk"/>
                                     <constraint firstItem="gfL-fL-XVu" firstAttribute="leading" secondItem="bQN-EV-GOv" secondAttribute="leading" constant="20" id="pEO-Su-z34"/>
                                     <constraint firstItem="5Li-Dy-ou1" firstAttribute="centerY" secondItem="bQN-EV-GOv" secondAttribute="centerY" id="q7h-rV-xD6"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydl-0A-90s">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydl-0A-90s" customClass="PostCell" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trump" translatesAutoresizingMaskIntoConstraints="NO" id="3yH-9l-nsd" customClass="roundImage" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                         <constraints>
@@ -198,7 +212,7 @@
                                         </constraints>
                                         <state key="normal" image="like"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDb-tk-bhD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDb-tk-bhD">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="123" id="Hqz-12-Znk"/>
                                         </constraints>
@@ -211,6 +225,15 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucS-1i-7Te">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="Nti-Fx-tVX"/>
+                                            <constraint firstAttribute="height" constant="21" id="z06-KN-tJm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -220,14 +243,16 @@
                                     <constraint firstAttribute="bottom" secondItem="gGJ-Ru-7tj" secondAttribute="bottom" constant="7" id="Cfr-rY-zsX"/>
                                     <constraint firstItem="gGJ-Ru-7tj" firstAttribute="top" secondItem="3yH-9l-nsd" secondAttribute="bottom" constant="8" symbolic="YES" id="HeU-ja-OwE"/>
                                     <constraint firstItem="gGJ-Ru-7tj" firstAttribute="top" secondItem="hDb-tk-bhD" secondAttribute="bottom" constant="27" id="LS1-CZ-OoY"/>
+                                    <constraint firstItem="ucS-1i-7Te" firstAttribute="trailing" secondItem="218-ZL-DEN" secondAttribute="trailing" id="M76-aP-nZH"/>
                                     <constraint firstItem="wTO-pP-MrV" firstAttribute="leading" secondItem="hDb-tk-bhD" secondAttribute="trailing" constant="6" id="ONz-5f-ge2"/>
                                     <constraint firstItem="gGJ-Ru-7tj" firstAttribute="leading" secondItem="3yH-9l-nsd" secondAttribute="leading" id="TYd-vi-dGf"/>
+                                    <constraint firstItem="218-ZL-DEN" firstAttribute="centerY" secondItem="wTO-pP-MrV" secondAttribute="centerY" id="aPb-Ns-RCZ"/>
                                     <constraint firstItem="hDb-tk-bhD" firstAttribute="centerY" secondItem="wTO-pP-MrV" secondAttribute="centerY" id="f7a-wo-GNf"/>
-                                    <constraint firstAttribute="bottom" secondItem="218-ZL-DEN" secondAttribute="bottom" constant="8" id="l8C-fE-Ivi"/>
+                                    <constraint firstItem="ucS-1i-7Te" firstAttribute="top" secondItem="218-ZL-DEN" secondAttribute="bottom" constant="8" symbolic="YES" id="h4M-Da-IeI"/>
                                     <constraint firstItem="3yH-9l-nsd" firstAttribute="leading" secondItem="Ydl-0A-90s" secondAttribute="leading" constant="20" id="o1m-e1-ezK"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKp-BX-yh3">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKp-BX-yh3" customClass="PostCell" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gary" translatesAutoresizingMaskIntoConstraints="NO" id="GuC-9F-p6n" customClass="roundImage" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                         <constraints>
@@ -243,16 +268,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqP-8B-Adv" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
-                                        <frame key="frameInset" minX="327" minY="87" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="iY1-Dk-Zdp"/>
-                                            <constraint firstAttribute="height" constant="40" id="jdi-sS-YYB"/>
-                                        </constraints>
-                                        <state key="normal" image="like"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-rn-YMh">
-                                        <frame key="frameInset" minX="105" minY="55" width="123" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-rn-YMh">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="123" id="Eel-qP-I90"/>
                                         </constraints>
@@ -260,27 +276,45 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Voters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXh-sM-nXW">
-                                        <frame key="frameInset" minX="234" minY="55" width="50" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXh-sM-nXW">
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzt-8n-XGZ">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="hRx-uY-pVl"/>
+                                            <constraint firstAttribute="width" constant="42" id="lka-bX-XRT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqP-8B-Adv" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Jvx-He-phd"/>
+                                            <constraint firstAttribute="height" constant="40" id="V6P-tz-RzK"/>
+                                        </constraints>
+                                        <state key="normal" image="like"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.40392156862745099" green="0.22745098039215686" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="GuC-9F-p6n" firstAttribute="centerY" secondItem="DKp-BX-yh3" secondAttribute="centerY" constant="-7.5" id="5mj-8g-YP6"/>
+                                    <constraint firstItem="zqP-8B-Adv" firstAttribute="centerY" secondItem="DKp-BX-yh3" secondAttribute="centerY" id="Pel-aW-xVA"/>
+                                    <constraint firstItem="Kzt-8n-XGZ" firstAttribute="trailing" secondItem="zqP-8B-Adv" secondAttribute="trailing" id="SMv-Or-XR3"/>
                                     <constraint firstItem="UKT-rn-YMh" firstAttribute="centerY" secondItem="MXh-sM-nXW" secondAttribute="centerY" id="VHJ-gc-nF4"/>
+                                    <constraint firstItem="Kzt-8n-XGZ" firstAttribute="top" secondItem="zqP-8B-Adv" secondAttribute="bottom" constant="8" symbolic="YES" id="Vjl-D3-REM"/>
                                     <constraint firstItem="UKT-rn-YMh" firstAttribute="leading" secondItem="GuC-9F-p6n" secondAttribute="trailing" constant="5" id="b0C-Hj-Y6Q"/>
                                     <constraint firstItem="GuC-9F-p6n" firstAttribute="leading" secondItem="DKp-BX-yh3" secondAttribute="leading" constant="20" id="cyR-TN-XxB"/>
-                                    <constraint firstAttribute="trailing" secondItem="zqP-8B-Adv" secondAttribute="trailing" constant="8" id="kUY-vg-lTM"/>
-                                    <constraint firstItem="zqP-8B-Adv" firstAttribute="centerY" secondItem="MXh-sM-nXW" secondAttribute="centerY" id="knH-b4-Ii1"/>
+                                    <constraint firstItem="zqP-8B-Adv" firstAttribute="centerY" secondItem="MXh-sM-nXW" secondAttribute="centerY" id="epu-pP-alE"/>
+                                    <constraint firstAttribute="trailing" secondItem="zqP-8B-Adv" secondAttribute="trailing" constant="8" id="mJb-nC-eDp"/>
                                     <constraint firstItem="MXh-sM-nXW" firstAttribute="leading" secondItem="UKT-rn-YMh" secondAttribute="trailing" constant="6" id="orj-Mt-iUK"/>
                                     <constraint firstItem="hO7-8r-GOI" firstAttribute="leading" secondItem="GuC-9F-p6n" secondAttribute="leading" id="rhL-Ag-tYh"/>
                                     <constraint firstItem="hO7-8r-GOI" firstAttribute="top" secondItem="GuC-9F-p6n" secondAttribute="bottom" constant="5" id="vrH-ZS-ws3"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2q0-wD-WDz">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2q0-wD-WDz" customClass="PostCell" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jill" translatesAutoresizingMaskIntoConstraints="NO" id="YwX-dT-Ru7" customClass="roundImage" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                         <constraints>
@@ -296,15 +330,14 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-dh-bVM" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
-                                        <frame key="frameInset" minX="327" minY="85" width="40" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-dh-bVM" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="8EA-Xw-Cyi"/>
                                             <constraint firstAttribute="height" constant="40" id="JSj-EH-PR4"/>
                                         </constraints>
                                         <state key="normal" image="like"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hht-HM-CUq">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hht-HM-CUq">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="123" id="Vjm-ES-Ua5"/>
                                         </constraints>
@@ -314,6 +347,15 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-bE-8f2">
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW9-oH-Tz0">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Bom-bx-nUi"/>
+                                            <constraint firstAttribute="width" constant="42" id="mkM-rE-TIv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -329,10 +371,12 @@
                                     <constraint firstItem="Hht-HM-CUq" firstAttribute="leading" secondItem="YwX-dT-Ru7" secondAttribute="trailing" constant="5" id="NOS-dF-GIU"/>
                                     <constraint firstItem="YwX-dT-Ru7" firstAttribute="centerY" secondItem="2q0-wD-WDz" secondAttribute="centerY" constant="-8.5" id="cMg-up-dxu"/>
                                     <constraint firstItem="XTM-bE-8f2" firstAttribute="leading" secondItem="Hht-HM-CUq" secondAttribute="trailing" constant="6" id="tMF-w2-Kfu"/>
+                                    <constraint firstItem="nW9-oH-Tz0" firstAttribute="top" secondItem="bSG-dh-bVM" secondAttribute="bottom" constant="8" symbolic="YES" id="uqv-0W-kqj"/>
                                     <constraint firstItem="Hht-HM-CUq" firstAttribute="centerY" secondItem="XTM-bE-8f2" secondAttribute="centerY" id="w1d-Me-CHy"/>
+                                    <constraint firstItem="nW9-oH-Tz0" firstAttribute="trailing" secondItem="bSG-dh-bVM" secondAttribute="trailing" id="w9m-sV-56P"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2f-W2-We4">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2f-W2-We4" customClass="PostCell" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="evan" translatesAutoresizingMaskIntoConstraints="NO" id="tyP-dB-NfW" customClass="roundImage" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                         <constraints>
@@ -355,7 +399,7 @@
                                         </constraints>
                                         <state key="normal" image="like"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3f-me-9CI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3f-me-9CI">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="123" id="uA2-Ra-2m6"/>
                                         </constraints>
@@ -368,15 +412,26 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvT-RF-iuQ">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="5YO-8l-sFa"/>
+                                            <constraint firstAttribute="height" constant="21" id="nga-Ts-JPI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.011764705882352941" green="0.5" blue="0.95686274509803815" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="r3f-me-9CI" firstAttribute="centerY" secondItem="O2f-W2-We4" secondAttribute="centerY" id="A9K-Xg-gJi"/>
                                     <constraint firstItem="r3f-me-9CI" firstAttribute="leading" secondItem="tyP-dB-NfW" secondAttribute="trailing" constant="5" id="Hfc-CU-kvS"/>
+                                    <constraint firstAttribute="trailing" secondItem="nvT-RF-iuQ" secondAttribute="trailing" constant="6" id="PpH-bp-yVC"/>
                                     <constraint firstItem="r3f-me-9CI" firstAttribute="centerY" secondItem="sqE-82-VBg" secondAttribute="centerY" id="PzN-kt-zna"/>
                                     <constraint firstItem="tyP-dB-NfW" firstAttribute="leading" secondItem="O2f-W2-We4" secondAttribute="leading" constant="20" id="S6u-Ja-5hZ"/>
                                     <constraint firstItem="sqE-82-VBg" firstAttribute="leading" secondItem="r3f-me-9CI" secondAttribute="trailing" constant="6" id="VkQ-BH-0Yl"/>
                                     <constraint firstAttribute="trailing" secondItem="cMe-Lk-CCq" secondAttribute="trailing" constant="8" id="Wwh-hY-t9H"/>
+                                    <constraint firstItem="nvT-RF-iuQ" firstAttribute="top" secondItem="cMe-Lk-CCq" secondAttribute="bottom" constant="8" id="XMP-KJ-60j"/>
                                     <constraint firstItem="UvV-Gz-b1a" firstAttribute="leading" secondItem="tyP-dB-NfW" secondAttribute="leading" id="bfL-y2-Her"/>
                                     <constraint firstItem="UvV-Gz-b1a" firstAttribute="top" secondItem="tyP-dB-NfW" secondAttribute="bottom" constant="4" id="dR1-qI-TxB"/>
                                     <constraint firstItem="cMe-Lk-CCq" firstAttribute="centerY" secondItem="sqE-82-VBg" secondAttribute="centerY" id="fSm-Pf-x9l"/>
@@ -408,6 +463,10 @@
                             <constraint firstItem="DKp-BX-yh3" firstAttribute="top" secondItem="JIm-iY-aSE" secondAttribute="top" constant="266" id="xVe-If-3xf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="likeButton" destination="EbI-ac-17q" id="j6o-TZ-AK1"/>
+                        <outlet property="likesLabel" destination="zWg-jl-jdm" id="5Bq-rk-9uA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u2r-ei-Koa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
