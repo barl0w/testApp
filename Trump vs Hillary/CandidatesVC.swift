@@ -15,6 +15,9 @@ class CandidatesVC : UIViewController {
     @IBOutlet weak var likesLabel: UILabel!
     @IBOutlet weak var likeButton: CustomButton!
     
+    override func viewDidAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
 }
 
 
