@@ -60,6 +60,8 @@ class VoteVC: UIViewController {
     var votesForStein: Int = 0
     var votesForMcMullin: Int = 0
     
+    var myOneVote: Int = 0
+    
     /////
 
     override func viewDidLoad() {
@@ -106,7 +108,8 @@ class VoteVC: UIViewController {
             
             self.hillaryVoteButton.setImage(#imageLiteral(resourceName: "like-filled"), for: .normal)
             
-            self.votesForHillary += 1
+            self.myOneVote = 1
+            self.votesForHillary += self.myOneVote
             self.hillaryVoteCount.text = String(self.votesForHillary)
         
             self.trumpVoteButton.isEnabled = false
@@ -135,25 +138,78 @@ class VoteVC: UIViewController {
                 
                 self.hillaryVoteButton.setImage(#imageLiteral(resourceName: "like"), for: .normal)
                 
-                self.votesForHillary -= 1
-                self.hillaryVoteCount.text = String(self.votesForHillary)
+                if self.myOneVote == 1 {
                 
-                self.trumpVoteButton.isEnabled = true
-                self.johnsonVoteButton.isEnabled = true
-                self.steinVoteButton.isEnabled = true
-                self.mcMullinVoteButton.isEnabled = true
-                
-                self.hillaryVoteText.isHidden = false
-                self.trumpVoteText.isHidden = false
-                self.johnsonVoteText.isHidden = false
-                self.steinVoteText.isHidden = false
-                self.mcMullinVoteText.isHidden = false
-                
-                self.hillaryVotedText.isHidden = true
-                self.trumpVotedText.isHidden = true
-                self.johnsonVotedText.isHidden = true
-                self.steinVotedText.isHidden = true
-                self.mcMullinVotedText.isHidden = true
+                    self.votesForHillary -= self.myOneVote
+                    self.hillaryVoteCount.text = String(self.votesForHillary)
+                    
+                    self.trumpVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                    self.myOneVote = 0
+                    
+                } else if self.myOneVote == 0 {
+                    
+                    self.hillaryVoteCount.text = String(self.votesForHillary)
+                    
+                    self.trumpVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                } else if self.myOneVote < 0 || self.myOneVote > 1 {
+                    
+                    self.myOneVote = 1
+                    
+                    self.votesForHillary -= self.myOneVote
+                    self.hillaryVoteCount.text = String(self.votesForHillary)
+                    
+                    self.trumpVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                    self.myOneVote = 0
+                    
+                }
                 
             }
             
@@ -171,7 +227,8 @@ class VoteVC: UIViewController {
             
             self.trumpVoteButton.setImage(#imageLiteral(resourceName: "like-filled"), for: .normal)
             
-            self.votesForTrump += 1
+            self.myOneVote = 1
+            self.votesForTrump += self.myOneVote
             self.trumpVoteCount.text = String(self.votesForTrump)
             
             self.hillaryVoteButton.isEnabled = false
@@ -200,25 +257,78 @@ class VoteVC: UIViewController {
             
                 self.trumpVoteButton.setImage(#imageLiteral(resourceName: "like"), for: .normal)
                 
-                self.votesForTrump -= 1
-                self.trumpVoteCount.text = String(self.votesForTrump)
+                if self.myOneVote == 1 {
                 
-                self.hillaryVoteButton.isEnabled = true
-                self.johnsonVoteButton.isEnabled = true
-                self.steinVoteButton.isEnabled = true
-                self.mcMullinVoteButton.isEnabled = true
-                
-                self.hillaryVoteText.isHidden = false
-                self.trumpVoteText.isHidden = false
-                self.johnsonVoteText.isHidden = false
-                self.steinVoteText.isHidden = false
-                self.mcMullinVoteText.isHidden = false
-                
-                self.hillaryVotedText.isHidden = true
-                self.trumpVotedText.isHidden = true
-                self.johnsonVotedText.isHidden = true
-                self.steinVotedText.isHidden = true
-                self.mcMullinVotedText.isHidden = true
+                    self.votesForTrump -= self.myOneVote
+                    self.trumpVoteCount.text = String(self.votesForTrump)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                    self.myOneVote = 0
+                    
+                } else if self.myOneVote == 0 {
+                 
+                    self.trumpVoteCount.text = String(self.votesForTrump)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                } else if self.myOneVote < 0 || self.myOneVote > 1 {
+                    
+                    self.myOneVote = 1
+                    
+                    self.votesForTrump -= self.myOneVote
+                    self.trumpVoteCount.text = String(self.votesForTrump)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                    self.myOneVote = 0
+                    
+                }
                 
             }
             
@@ -236,7 +346,8 @@ class VoteVC: UIViewController {
             
             self.johnsonVoteButton.setImage(#imageLiteral(resourceName: "like-filled"), for: .normal)
             
-            self.votesForJohnson += 1
+            self.myOneVote = 1
+            self.votesForJohnson += self.myOneVote
             self.johnsonVoteCount.text = String(self.votesForJohnson)
             
             self.hillaryVoteButton.isEnabled = false
@@ -265,25 +376,76 @@ class VoteVC: UIViewController {
             
                 self.johnsonVoteButton.setImage(#imageLiteral(resourceName: "like"), for: .normal)
                 
-                self.votesForJohnson -= 1
-                self.johnsonVoteCount.text = String(self.votesForJohnson)
+                if self.myOneVote == 1 {
                 
-                self.hillaryVoteButton.isEnabled = true
-                self.trumpVoteButton.isEnabled = true
-                self.steinVoteButton.isEnabled = true
-                self.mcMullinVoteButton.isEnabled = true
-                
-                self.hillaryVoteText.isHidden = false
-                self.trumpVoteText.isHidden = false
-                self.johnsonVoteText.isHidden = false
-                self.steinVoteText.isHidden = false
-                self.mcMullinVoteText.isHidden = false
-                
-                self.hillaryVotedText.isHidden = true
-                self.trumpVotedText.isHidden = true
-                self.johnsonVotedText.isHidden = true
-                self.steinVotedText.isHidden = true
-                self.mcMullinVotedText.isHidden = true
+                    self.votesForJohnson -= self.myOneVote
+                    self.johnsonVoteCount.text = String(self.votesForJohnson)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.trumpVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                    self.myOneVote = 0
+                    
+                } else if self.myOneVote == 0 {
+                    
+                    self.johnsonVoteCount.text = String(self.votesForJohnson)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.trumpVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                } else if self.myOneVote < 0 || self.myOneVote > 1 {
+                    
+                    self.votesForJohnson -= self.myOneVote
+                    self.johnsonVoteCount.text = String(self.votesForJohnson)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.trumpVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                    self.myOneVote = 0
+                    
+                }
                 
             }
             
@@ -301,7 +463,8 @@ class VoteVC: UIViewController {
             
             self.steinVoteButton.setImage(#imageLiteral(resourceName: "like-filled"), for: .normal)
             
-            self.votesForStein += 1
+            self.myOneVote = 1
+            self.votesForStein += self.myOneVote
             self.steinVoteCount.text = String(self.votesForStein)
             
             self.hillaryVoteButton.isEnabled = false
@@ -330,25 +493,78 @@ class VoteVC: UIViewController {
             
                 self.steinVoteButton.setImage(#imageLiteral(resourceName: "like"), for: .normal)
                 
-                self.votesForStein -= 1
-                self.steinVoteCount.text = String(self.votesForStein)
-                
-                self.hillaryVoteButton.isEnabled = true
-                self.trumpVoteButton.isEnabled = true
-                self.johnsonVoteButton.isEnabled = true
-                self.mcMullinVoteButton.isEnabled = true
-                
-                self.hillaryVoteText.isHidden = false
-                self.trumpVoteText.isHidden = false
-                self.johnsonVoteText.isHidden = false
-                self.steinVoteText.isHidden = false
-                self.mcMullinVoteText.isHidden = false
-                
-                self.hillaryVotedText.isHidden = true
-                self.trumpVotedText.isHidden = true
-                self.johnsonVotedText.isHidden = true
-                self.steinVotedText.isHidden = true
-                self.mcMullinVotedText.isHidden = true
+                if self.myOneVote == 1 {
+                    
+                    self.votesForStein -= self.myOneVote
+                    self.steinVoteCount.text = String(self.votesForStein)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.trumpVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                    self.myOneVote = 0
+                    
+                } else if self.myOneVote == 0 {
+                    
+                    self.steinVoteCount.text = String(self.votesForStein)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.trumpVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                } else if self.myOneVote < 0 || self.myOneVote > 1 {
+                    
+                    self.myOneVote = 1
+                    
+                    self.votesForStein -= self.myOneVote
+                    self.steinVoteCount.text = String(self.votesForStein)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.trumpVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.mcMullinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                    self.myOneVote = 0
+                    
+                }
                 
             }
             
@@ -366,7 +582,8 @@ class VoteVC: UIViewController {
             
             self.mcMullinVoteButton.setImage(#imageLiteral(resourceName: "like-filled"), for: .normal)
             
-            self.votesForMcMullin += 1
+            self.myOneVote = 1
+            self.votesForMcMullin += self.myOneVote
             self.mcMullinVoteCount.text = String(self.votesForMcMullin)
             
             self.hillaryVoteButton.isEnabled = false
@@ -395,25 +612,78 @@ class VoteVC: UIViewController {
             
                 self.mcMullinVoteButton.setImage(#imageLiteral(resourceName: "like"), for: .normal)
                 
-                self.votesForMcMullin -= 1
-                self.mcMullinVoteCount.text = String(self.votesForMcMullin)
-                
-                self.hillaryVoteButton.isEnabled = true
-                self.trumpVoteButton.isEnabled = true
-                self.johnsonVoteButton.isEnabled = true
-                self.steinVoteButton.isEnabled = true
-                
-                self.hillaryVoteText.isHidden = false
-                self.trumpVoteText.isHidden = false
-                self.johnsonVoteText.isHidden = false
-                self.steinVoteText.isHidden = false
-                self.mcMullinVoteText.isHidden = false
-                
-                self.hillaryVotedText.isHidden = true
-                self.trumpVotedText.isHidden = true
-                self.johnsonVotedText.isHidden = true
-                self.steinVotedText.isHidden = true
-                self.mcMullinVotedText.isHidden = true
+                if self.myOneVote == 1 {
+                    
+                    self.votesForMcMullin -= self.myOneVote
+                    self.mcMullinVoteCount.text = String(self.votesForMcMullin)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.trumpVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                    self.myOneVote = 0
+                    
+                } else if self.myOneVote == 0 {
+                    
+                    self.mcMullinVoteCount.text = String(self.votesForMcMullin)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.trumpVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                } else if self.myOneVote < 0 || self.myOneVote > 1 {
+                    
+                    self.myOneVote = 1
+                    
+                    self.votesForMcMullin -= self.myOneVote
+                    self.mcMullinVoteCount.text = String(self.votesForMcMullin)
+                    
+                    self.hillaryVoteButton.isEnabled = true
+                    self.trumpVoteButton.isEnabled = true
+                    self.johnsonVoteButton.isEnabled = true
+                    self.steinVoteButton.isEnabled = true
+                    
+                    self.hillaryVoteText.isHidden = false
+                    self.trumpVoteText.isHidden = false
+                    self.johnsonVoteText.isHidden = false
+                    self.steinVoteText.isHidden = false
+                    self.mcMullinVoteText.isHidden = false
+                    
+                    self.hillaryVotedText.isHidden = true
+                    self.trumpVotedText.isHidden = true
+                    self.johnsonVotedText.isHidden = true
+                    self.steinVotedText.isHidden = true
+                    self.mcMullinVotedText.isHidden = true
+                    
+                    self.myOneVote = 0
+                    
+                }
                 
             }
             
