@@ -27,8 +27,6 @@ extension UIButton {
 
 class CustomButton : UIButton {
     
-    
-    
     @IBInspectable var fontColor : UIColor = UIColor.white {
         didSet {
             self.tintColor = fontColor
@@ -45,6 +43,8 @@ class CustomButton : UIButton {
     }
     
     func setupView() {
+        //self.layer.cornerRadius = 40
+        
         self.layer.cornerRadius = cornerRadius
         
         self.addTarget(self, action: #selector(CustomButton.scaleToSmall), for: .touchDown)

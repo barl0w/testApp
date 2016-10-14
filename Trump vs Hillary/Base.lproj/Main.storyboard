@@ -170,11 +170,12 @@
                                                 <color key="textColor" red="0.93333333333333335" green="1" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYw-mU-azw">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYw-mU-azw" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="hK7-Zf-k2f"/>
                                                     <constraint firstAttribute="height" constant="80" id="pxT-6t-Qet"/>
                                                 </constraints>
+                                                <state key="normal" image="hillary"/>
                                                 <connections>
                                                     <action selector="sendToHillaryWebsite:" destination="Jag-dm-GIA" eventType="touchUpInside" id="wH2-iG-OpM"/>
                                                 </connections>
@@ -248,11 +249,12 @@
                                                 <color key="textColor" red="0.93333333333333335" green="1" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOi-hR-gzO">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOi-hR-gzO" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="gKw-ON-6jS"/>
                                                     <constraint firstAttribute="width" constant="80" id="nfw-sR-Xqq"/>
                                                 </constraints>
+                                                <state key="normal" image="trump"/>
                                                 <connections>
                                                     <action selector="sendToTrumpWebsite:" destination="Jag-dm-GIA" eventType="touchUpInside" id="BSc-46-y37"/>
                                                 </connections>
@@ -327,11 +329,12 @@
                                                 <color key="textColor" red="0.93333333333333335" green="1" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsE-QE-WMd">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsE-QE-WMd" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="ZFc-5q-GPw"/>
                                                     <constraint firstAttribute="width" constant="80" id="q2P-fp-Ngc"/>
                                                 </constraints>
+                                                <state key="normal" image="gary"/>
                                                 <connections>
                                                     <action selector="sendToJohnsonWebsite:" destination="Jag-dm-GIA" eventType="touchUpInside" id="07A-IZ-pog"/>
                                                 </connections>
@@ -405,11 +408,12 @@
                                                 <color key="textColor" red="0.93333333333333335" green="1" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mks-6Q-77G">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mks-6Q-77G" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="VeJ-OQ-cQv"/>
                                                     <constraint firstAttribute="width" constant="80" id="bm3-QL-1kM"/>
                                                 </constraints>
+                                                <state key="normal" image="jill"/>
                                                 <connections>
                                                     <action selector="sendToSteinWebsite:" destination="Jag-dm-GIA" eventType="touchUpInside" id="HUp-dq-MNo"/>
                                                 </connections>
@@ -483,11 +487,12 @@
                                                 <color key="textColor" red="0.93333333333333335" green="1" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S3-2f-lIZ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S3-2f-lIZ" customClass="CustomButton" customModule="Trump_vs_Hillary" customModuleProvider="target">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="npS-1x-vWS"/>
                                                     <constraint firstAttribute="height" constant="80" id="qIu-mH-xNs"/>
                                                 </constraints>
+                                                <state key="normal" image="evan"/>
                                                 <connections>
                                                     <action selector="sendToMcMullinWebsite:" destination="Jag-dm-GIA" eventType="touchUpInside" id="La8-6u-N3I"/>
                                                 </connections>
@@ -583,11 +588,11 @@
     </scenes>
     <resources>
         <image name="Facebook-color" width="48" height="48"/>
-        <image name="evan" width="225" height="225"/>
-        <image name="gary" width="126" height="126"/>
-        <image name="hillary" width="225" height="225"/>
-        <image name="jill" width="186" height="186"/>
+        <image name="evan" width="400" height="400"/>
+        <image name="gary" width="400" height="400"/>
+        <image name="hillary" width="512" height="512"/>
+        <image name="jill" width="400" height="400"/>
         <image name="like" width="138" height="138"/>
-        <image name="trump" width="225" height="225"/>
+        <image name="trump" width="400" height="400"/>
     </resources>
 </document>

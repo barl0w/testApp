@@ -127,7 +127,7 @@ class VoteVC: UIViewController {
             
         } else {
             
-            let alertController = UIAlertController(title: "Be Careful!", message: "This will remove the vote for this candidate. Press Cancel to go back now", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Change your vote?", message: "This will remove the vote for this candidate. Press Cancel to go back now", preferredStyle: UIAlertControllerStyle.alert)
             
             let CancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (result : UIAlertAction) -> Void in
                 print("Cancel")
@@ -246,7 +246,7 @@ class VoteVC: UIViewController {
             
         } else {
             
-            let alertController = UIAlertController(title: "Be Careful!", message: "This will remove the vote for this candidate. Press Cancel to go back now", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Change your vote?", message: "This will remove the vote for this candidate. Press Cancel to go back now", preferredStyle: UIAlertControllerStyle.alert)
             
             let CancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (result : UIAlertAction) -> Void in
                 print("Cancel")
@@ -365,7 +365,7 @@ class VoteVC: UIViewController {
             
         } else {
             
-            let alertController = UIAlertController(title: "Be Careful!", message: "This will remove the vote for this candidate. Press Cancel to go back now", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Change your vote?", message: "This will remove the vote for this candidate. Press Cancel to go back now", preferredStyle: UIAlertControllerStyle.alert)
             
             let CancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (result : UIAlertAction) -> Void in
                 print("Cancel")
@@ -482,7 +482,7 @@ class VoteVC: UIViewController {
             
         } else {
             
-            let alertController = UIAlertController(title: "Be Careful!", message: "This will remove the vote for this candidate. Press Cancel to go back now", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Change your vote?", message: "This will remove the vote for this candidate. Press Cancel to go back now", preferredStyle: UIAlertControllerStyle.alert)
             
             let CancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (result : UIAlertAction) -> Void in
                 print("Cancel")
@@ -601,7 +601,7 @@ class VoteVC: UIViewController {
             
         } else {
             
-            let alertController = UIAlertController(title: "Be Careful!", message: "This will remove the vote for this candidate. Press Cancel to go back now", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Change your vote?", message: "This will remove the vote for this candidate. Press Cancel to go back now", preferredStyle: UIAlertControllerStyle.alert)
             
             let CancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (result : UIAlertAction) -> Void in
                 print("Cancel")
@@ -701,11 +701,25 @@ class VoteVC: UIViewController {
         
         print("Send to Hillary website")
         
+        let url = URL(string: "http://www.hillaryclinton.com")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        
     }
     
     @IBAction func sendToTrumpWebsite(_ sender: AnyObject) {
         
         print("Send to Trump website")
+        
+        let url = URL(string: "http://www.donaldjtrump.com")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
         
     }
     
@@ -713,11 +727,25 @@ class VoteVC: UIViewController {
         
         print("Send to Johnson website")
         
+        let url = URL(string: "https://johnsonweld.com")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        
     }
     
     @IBAction func sendToSteinWebsite(_ sender: AnyObject) {
         
         print("Send to Stein website")
+        
+        let url = URL(string: "http://www.jill2016.com")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
         
     }
     
@@ -725,8 +753,13 @@ class VoteVC: UIViewController {
         
         print("Send to McMullin website")
         
+        let url = URL(string: "http://www.evanmcmullin.com")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        
     }
     
-    
-
 }
